@@ -28,32 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.userControl_MySql1 = new ChucNang_1.UserControl_MySql();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.ccccToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // userControl_MySql1
+            // menuStrip1
             // 
-            this.userControl_MySql1.Location = new System.Drawing.Point(255, 61);
-            this.userControl_MySql1.Name = "userControl_MySql1";
-            this.userControl_MySql1.Size = new System.Drawing.Size(520, 288);
-            this.userControl_MySql1.TabIndex = 0;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ccccToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1068, 24);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // ccccToolStripMenuItem
+            // 
+            this.ccccToolStripMenuItem.Name = "ccccToolStripMenuItem";
+            this.ccccToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.ccccToolStripMenuItem.Text = "cccc";
+            this.ccccToolStripMenuItem.Click += new System.EventHandler(this.ccccToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(967, 503);
-            this.Controls.Add(this.userControl_MySql1);
+            this.ClientSize = new System.Drawing.Size(1068, 503);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
 
         #endregion
-
-        private ChucNang_1.UserControl_MySql userControl_MySql1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem ccccToolStripMenuItem;
     }
 }
 

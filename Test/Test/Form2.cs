@@ -1,5 +1,4 @@
-﻿using ChucNang_1;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,19 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 namespace Test
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
-        }
-
-        private void ccccToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form2 fr = new Form2();
-            fr.ShowDialog();
         }
     }
 }
