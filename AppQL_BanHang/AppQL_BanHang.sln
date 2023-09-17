@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34018.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppQL_BanHang", "AppQL_BanHang.csproj", "{78335140-EE62-4566-837A-2A21B9180D94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThuVien_GiaoDien", "..\ThuVien_GiaoDien\ThuVien_GiaoDien.csproj", "{53762D76-89BA-49E3-8B01-DBEDE4F4B406}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78335140-EE62-4566-837A-2A21B9180D94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78335140-EE62-4566-837A-2A21B9180D94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78335140-EE62-4566-837A-2A21B9180D94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78335140-EE62-4566-837A-2A21B9180D94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53762D76-89BA-49E3-8B01-DBEDE4F4B406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53762D76-89BA-49E3-8B01-DBEDE4F4B406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53762D76-89BA-49E3-8B01-DBEDE4F4B406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53762D76-89BA-49E3-8B01-DBEDE4F4B406}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A06D3AE-27DE-4293-993A-786025FADB46}
+	EndGlobalSection
+EndGlobal
