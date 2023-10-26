@@ -50,8 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAL_Brand.cs" />
-    <Compile Include="DAL_User.cs" />
+    <Compile Include="Form_Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Category.Designer.cs">
+      <DependentUpon>Form_Category.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Control.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,23 +68,34 @@
     <Compile Include="Form_Main.Designer.cs">
       <DependentUpon>Form_Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="From_ResgisterUser.cs">
+    <Compile Include="Form_Product.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="From_ResgisterUser.Designer.cs">
-      <DependentUpon>From_ResgisterUser.cs</DependentUpon>
+    <Compile Include="Form_Product.Designer.cs">
+      <DependentUpon>Form_Product.cs</DependentUpon>
     </Compile>
-    <Compile Include="MySQL.cs" />
+    <Compile Include="Form_ResgisterUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ResgisterUser.Designer.cs">
+      <DependentUpon>Form_ResgisterUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_Category.resx">
+      <DependentUpon>Form_Category.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Control.resx">
       <DependentUpon>Form_Control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Main.resx">
       <DependentUpon>Form_Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="From_ResgisterUser.resx">
-      <DependentUpon>From_ResgisterUser.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Product.resx">
+      <DependentUpon>Form_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ResgisterUser.resx">
+      <DependentUpon>Form_ResgisterUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -105,10 +120,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{944209d7-d780-4312-91d7-9e46825039ea}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ThuVien_GiaoDien\ThuVien_GiaoDien.csproj">
       <Project>{53762D76-89BA-49E3-8B01-DBEDE4F4B406}</Project>
       <Name>ThuVien_GiaoDien</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="img\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

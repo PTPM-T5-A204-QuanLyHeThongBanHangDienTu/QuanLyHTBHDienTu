@@ -32,7 +32,7 @@ namespace AppQL_BanHang
                 {
                     conn.Open();
                 }
-                string CauLenh = "select Count(*) from tbl_brand where id = '" + brandId + "'";
+                string CauLenh = "select Count(*) from tbl_brand where brandId = '" + brandId + "'";
                 MySqlCommand cmd = new MySqlCommand(CauLenh, conn);
                 int Kq = (int)(long)cmd.ExecuteScalar();
                 if (conn.State == System.Data.ConnectionState.Open)

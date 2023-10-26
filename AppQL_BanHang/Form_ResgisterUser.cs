@@ -9,13 +9,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ThuVien_GiaoDien;
+using DAL;
 
 namespace AppQL_BanHang
 {
-    public partial class From_ResgisterUser : Form
+    public partial class Form_ResgisterUser : Form
     {
         DAL_User user = new DAL_User();
-        public From_ResgisterUser()
+        public Form_ResgisterUser()
         {
             InitializeComponent();
         }
@@ -92,7 +93,6 @@ namespace AppQL_BanHang
                     txt_adminEmail.Clear();
                     txt_adminPass.Clear();
                 }
-
                 else
                 {
                     MessageBox.Show("Lỗi");

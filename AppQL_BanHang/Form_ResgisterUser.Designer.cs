@@ -1,6 +1,6 @@
 ﻿namespace AppQL_BanHang
 {
-    partial class From_ResgisterUser
+    partial class Form_ResgisterUser
     {
         /// <summary>
         /// Required designer variable.

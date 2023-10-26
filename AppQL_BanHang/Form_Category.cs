@@ -7,43 +7,44 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAL;
 
 namespace AppQL_BanHang
 {
-    public partial class Form_Main : Form
+    public partial class Form_Category : Form
     {
-        DAL_Brand brand = new DAL_Brand();
-        public Form_Main()
+        DAL_Category cat = new DAL_Category();
+        public Form_Category()
         {
             InitializeComponent();
-            load();
         }
         public void load()
         {
-            DataTable dt = brand.load();
+            DataTable dt = cat.load();
             dtg_DataGridView1.DataSource = dt;
-            databingding(dt);
             dtg_DataGridView1.Columns[0].Visible = false;
+            databingding(dt);
+
         }
         public void databingding(DataTable dtd)
         {
-            txt_idBrand.DataBindings.Clear();
-            txt_nameBrand.DataBindings.Clear();
-            txt_idBrand.DataBindings.Add("text", dtd, "brandId");
-            txt_nameBrand.DataBindings.Add("text", dtd, "brandName");
+            txt_CatId.DataBindings.Clear();
+            txt_CatName.DataBindings.Clear();
+            txt_CatId.DataBindings.Add("text", dtd, "catId");
+            txt_CatName.DataBindings.Add("text", dtd, "catName");
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Form_Category_Load(object sender, EventArgs e)
         {
-
+            load();
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            string MH = txt_idBrand.Text;
-            string TH = txt_nameBrand.Text;
+            string catId = txt_CatId.Text;
+            string catName = txt_CatName.Text;
 
-            int kq = brand.Check_Connect(txt_idBrand.Text);
+            int kq = cat.Check_Connect(txt_CatId.Text);
             if (kq == -1)
             {
                 MessageBox.Show("Câu lệnh không hợp lệ");
@@ -56,7 +57,7 @@ namespace AppQL_BanHang
             }
             if (kq == 0)
             {
-                if (brand.Insert_Brand(MH, TH))
+                if (cat.Insert_Category(catId, catName))
                     MessageBox.Show("Thêm Thành Công");
                 else
                     MessageBox.Show("Lỗi");
@@ -68,11 +69,10 @@ namespace AppQL_BanHang
             DialogResult dlr = MessageBox.Show("Bạn có muốn xóa?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dlr == DialogResult.Yes)
             {
-                brand.Detele_Brand(txt_idBrand.Text);
+                cat.Detele_Brand(txt_CatId.Text);
                 MessageBox.Show("Đã Xóa");
                 load();
             }
-            
         }
     }
 }

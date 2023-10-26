@@ -25,8 +25,25 @@ namespace AppQL_BanHang
 
         private void button10_Click(object sender, EventArgs e)
         {
-            From_ResgisterUser fm = new From_ResgisterUser();
+            Form_ResgisterUser fm = new Form_ResgisterUser();
             fm.ShowDialog();
+        }
+
+        private void Form_Control_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form_Category fr = new Form_Category();
+            fr.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form_Product fr = new Form_Product();
+            fr.ShowDialog();
         }
     }
 }
