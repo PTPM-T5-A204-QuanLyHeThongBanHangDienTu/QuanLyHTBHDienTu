@@ -50,12 +50,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form_Admin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_Admin.Designer.cs">
-      <DependentUpon>Form_Admin.cs</DependentUpon>
-    </Compile>
+    <Compile Include="DAL_Brand.cs" />
+    <Compile Include="DAL_User.cs" />
     <Compile Include="Form_Control.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,17 +64,23 @@
     <Compile Include="Form_Main.Designer.cs">
       <DependentUpon>Form_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="From_ResgisterUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From_ResgisterUser.Designer.cs">
+      <DependentUpon>From_ResgisterUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="MySQL.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form_Admin.resx">
-      <DependentUpon>Form_Admin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form_Control.resx">
       <DependentUpon>Form_Control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Main.resx">
       <DependentUpon>Form_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From_ResgisterUser.resx">
+      <DependentUpon>From_ResgisterUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

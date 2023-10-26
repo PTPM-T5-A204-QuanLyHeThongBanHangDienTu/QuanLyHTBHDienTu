@@ -12,7 +12,7 @@ namespace AppQL_BanHang
 {
     public partial class Form_Main : Form
     {
-        MySQL mySql = new MySQL();
+        DAL_Brand brand = new DAL_Brand();
         public Form_Main()
         {
             InitializeComponent();
@@ -20,9 +20,10 @@ namespace AppQL_BanHang
         }
         public void load()
         {
-            DataTable dt = mySql.load();
+            DataTable dt = brand.load();
             dtg_DataGridView1.DataSource = dt;
             databingding(dt);
+            dtg_DataGridView1.Columns[0].Visible = false;
         }
         public void databingding(DataTable dtd)
         {
@@ -42,7 +43,7 @@ namespace AppQL_BanHang
             string MH = txt_idBrand.Text;
             string TH = txt_nameBrand.Text;
 
-            int kq = mySql.Check_Connect(txt_idBrand.Text);
+            int kq = brand.Check_Connect(txt_idBrand.Text);
             if (kq == -1)
             {
                 MessageBox.Show("Câu lệnh không hợp lệ");
@@ -55,7 +56,7 @@ namespace AppQL_BanHang
             }
             if (kq == 0)
             {
-                if (mySql.Insert(MH, TH))
+                if (brand.Insert_Brand(MH, TH))
                     MessageBox.Show("Thêm Thành Công");
                 else
                     MessageBox.Show("Lỗi");
@@ -67,7 +68,7 @@ namespace AppQL_BanHang
             DialogResult dlr = MessageBox.Show("Bạn có muốn xóa?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dlr == DialogResult.Yes)
             {
-                mySql.Detele(txt_idBrand.Text);
+                brand.Detele_Brand(txt_idBrand.Text);
                 MessageBox.Show("Đã Xóa");
             }
         }
