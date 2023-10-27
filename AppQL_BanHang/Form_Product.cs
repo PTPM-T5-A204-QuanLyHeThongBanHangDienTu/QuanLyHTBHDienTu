@@ -59,21 +59,21 @@ namespace AppQL_BanHang
         }
         public void databingding(DataTable dtd)
         {
-            txt_id.DataBindings.Clear();
-            txt_name.DataBindings.Clear();
-            txt_Price.DataBindings.Clear();
-            txt_Description.DataBindings.Clear();
-            cbb_Category.DataBindings.Clear();
-            cbb_Brand.DataBindings.Clear();
-            txt_HinhAnh.DataBindings.Clear();
+            //txt_id.DataBindings.Clear();
+            //txt_name.DataBindings.Clear();
+            //txt_Price.DataBindings.Clear();
+            //txt_Description.DataBindings.Clear();
+            //cbb_Category.DataBindings.Clear();
+            //cbb_Brand.DataBindings.Clear();
+            //txt_HinhAnh.DataBindings.Clear();
 
-            txt_id.DataBindings.Add("text", dtd, "productId");
-            txt_name.DataBindings.Add("text", dtd, "productName");
-            txt_Price.DataBindings.Add("text", dtd, "price");
-            txt_Description.DataBindings.Add("text", dtd, "product_desc");
-            cbb_Category.DataBindings.Add("text", dtd, "catId");
-            cbb_Brand.DataBindings.Add("text", dtd, "brandId");
-            txt_HinhAnh.DataBindings.Add("text", dtd, "image");
+            //txt_id.DataBindings.Add("text", dtd, "productId");
+            //txt_name.DataBindings.Add("text", dtd, "productName");
+            //txt_Price.DataBindings.Add("text", dtd, "price");
+            //txt_Description.DataBindings.Add("text", dtd, "product_desc");
+            //cbb_Category.DataBindings.Add("text", dtd, "catId");
+            //cbb_Brand.DataBindings.Add("text", dtd, "brandId");
+            //txt_HinhAnh.DataBindings.Add("text", dtd, "image");
 
 
         }
@@ -118,16 +118,42 @@ namespace AppQL_BanHang
 
         private void dtg_DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            //txt_id.Text = dtg_DataGridView1.CurrentRow.Cells[0].Value.ToString();
-            //txt_name.Text = dtg_DataGridView1.CurrentRow.Cells[1].Value.ToString();
-            //txt_Price.Text = dtg_DataGridView1.CurrentRow.Cells[2].Value.ToString();
+        //    txt_id.Text = dtg_DataGridView1.CurrentRow.Cells[0].Value.ToString();
+        //    txt_name.Text = dtg_DataGridView1.CurrentRow.Cells[1].Value.ToString();
+        //    txt_Price.Text = dtg_DataGridView1.CurrentRow.Cells[2].Value.ToString();
 
-            //checkFileName = dtg_DataGridView1.CurrentRow.Cells[3].Value.ToString();
-            //txt_HinhAnh.Text = checkFileName;
+        //    checkFileName = dtg_DataGridView1.CurrentRow.Cells[3].Value.ToString();
+        //    txt_HinhAnh.Text = checkFileName;
+        //    Bitmap bm = new Bitmap(Application.StartupPath + @"\img\" + checkFileName);
+        //    pcb_SanPham.Image = bm;
+        //    //txt_ghichu.Text = dtgv_DSSP.CurrentRow.Cells[6].Value.ToString();
+        //    //cbo_loaiSP.SelectedValue = dtgv_DSSP.CurrentRow.Cells[7].Value.ToString();
+        }
+
+        private void dtg_DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txt_id.Text = dtg_DataGridView1.CurrentRow.Cells[0].Value.ToString();
+            txt_name.Text = dtg_DataGridView1.CurrentRow.Cells[1].Value.ToString();
+            txt_Price.Text = dtg_DataGridView1.CurrentRow.Cells[10].Value.ToString();
+
+            checkFileName = dtg_DataGridView1.CurrentRow.Cells[11].Value.ToString();
+            txt_HinhAnh.Text = checkFileName;
             //Bitmap bm = new Bitmap(Application.StartupPath + @"\img\" + checkFileName);
             //pcb_SanPham.Image = bm;
-            ////txt_ghichu.Text = dtgv_DSSP.CurrentRow.Cells[6].Value.ToString();
-            ////cbo_loaiSP.SelectedValue = dtgv_DSSP.CurrentRow.Cells[7].Value.ToString();
+
+            string imagePath = Path.Combine(Application.StartupPath+ @"\img\"+checkFileName);
+
+            if (File.Exists(imagePath))
+            {
+                Bitmap bm = new Bitmap(imagePath);
+                //Image image = Image.FromFile(imagePath);
+                pcb_SanPham.Image = bm;
+            }
+            else
+            {
+                // Xử lý tệp không tồn tại, ví dụ: hiển thị hình ảnh mặc định
+                pcb_SanPham.Image = null;
+            }
         }
     }
 }
