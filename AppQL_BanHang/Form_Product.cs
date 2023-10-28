@@ -26,36 +26,49 @@ namespace AppQL_BanHang
         {
             InitializeComponent();
         }
-        public void load()
+        public void loadData()
         {
             DataTable dt = products.load();
-            dtg_DataGridView1.DataSource = dt;
-            dtg_DataGridView1.Columns[0].Visible = false;
-            dtg_DataGridView1.Columns[2].Visible = false;
-            dtg_DataGridView1.Columns[3].Visible = false;
-            dtg_DataGridView1.Columns[4].Visible = false;
-            dtg_DataGridView1.Columns[5].Visible = false;
-            dtg_DataGridView1.Columns[9].Visible = false;
+            dtgv_DSSP.DataSource = dt;
+            dtgv_DSSP.Columns[2].Visible = false;
+            dtgv_DSSP.Columns[4].Visible = false;
+            dtgv_DSSP.Columns[5].Visible = false;
+            dtgv_DSSP.Columns[9].Visible = false;
             databingding(dt);
-            
+
+
 
         }
-
+        public void LoadStart()
+        {
+            btn_luu.Enabled = true;
+            btn_them.Enabled = true;
+            btn_sua.Enabled = true;
+            txt_masp.Enabled = false;
+            txt_tensp.Enabled = false;
+            txt_sl.Enabled = false;
+            cbo_loaiSP.Enabled = false;
+            txt_dongiaban.Enabled = false;
+            txt_hinhanh.Enabled = false;
+            cbb_thuonghieu.Enabled = false;
+            txt_mota.Enabled = false;
+        }
         private void Form_Product_Load(object sender, EventArgs e)
         {
-            load();
+            LoadStart();
+            loadData();
             load_Combobox();
 
         }
         public void load_Combobox()
         {
-            cbb_Brand.DataSource = brand.load();
-            cbb_Brand.DisplayMember = "brandName";
-            cbb_Brand.ValueMember = "brandId";
+            cbb_thuonghieu.DataSource = brand.load();
+            cbb_thuonghieu.DisplayMember = "brandName";
+            cbb_thuonghieu.ValueMember = "brandId";
 
-            cbb_Category.DataSource = category.load();
-            cbb_Category.DisplayMember = "catName";
-            cbb_Category.ValueMember = "catId";
+            cbo_loaiSP.DataSource = category.load();
+            cbo_loaiSP.DisplayMember = "catName";
+            cbo_loaiSP.ValueMember = "catId";
         }
         public void databingding(DataTable dtd)
         {
@@ -76,6 +89,17 @@ namespace AppQL_BanHang
             //txt_HinhAnh.DataBindings.Add("text", dtd, "image");
 
 
+        }
+        private void msgBox(string message, bool isError = false)
+        {
+            if (isError)
+                MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else
+                MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        private bool checkIsNummber(string text)
+        {
+            return int.TryParse(text, out int s);
         }
         private Image cloneImage(string path)
         {
@@ -101,8 +125,8 @@ namespace AppQL_BanHang
                 pcb_SanPham.SizeMode = PictureBoxSizeMode.StretchImage;
                 fileName = Path.GetFileName(fileAddress);
                 string saveDirectory = Application.StartupPath;
-                fileSavePath = saveDirectory + @"\Images\" + fileName;
-                txt_HinhAnh.Text = fileName;
+                fileSavePath = saveDirectory + @"\img\" + fileName;
+                txt_hinhanh.Text = fileName;
             }
         }
 
@@ -132,27 +156,58 @@ namespace AppQL_BanHang
 
         private void dtg_DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txt_id.Text = dtg_DataGridView1.CurrentRow.Cells[0].Value.ToString();
-            txt_name.Text = dtg_DataGridView1.CurrentRow.Cells[1].Value.ToString();
-            txt_Price.Text = dtg_DataGridView1.CurrentRow.Cells[10].Value.ToString();
+            //txt_id.Text = dtg_DataGridView1.CurrentRow.Cells[0].Value.ToString();
+            //txt_name.Text = dtg_DataGridView1.CurrentRow.Cells[1].Value.ToString();
+            //txt_Price.Text = dtg_DataGridView1.CurrentRow.Cells[10].Value.ToString();
 
-            checkFileName = dtg_DataGridView1.CurrentRow.Cells[11].Value.ToString();
-            txt_HinhAnh.Text = checkFileName;
-            //Bitmap bm = new Bitmap(Application.StartupPath + @"\img\" + checkFileName);
-            //pcb_SanPham.Image = bm;
+            //checkFileName = dtg_DataGridView1.CurrentRow.Cells[11].Value.ToString();
+            //txt_HinhAnh.Text = checkFileName;
+            ////Bitmap bm = new Bitmap(Application.StartupPath + @"\img\" + checkFileName);
+            ////pcb_SanPham.Image = bm;
 
-            string imagePath = Path.Combine(Application.StartupPath+ @"\img\"+checkFileName);
+            //string imagePath = Path.Combine(Application.StartupPath + @"\img\" + checkFileName);
 
-            if (File.Exists(imagePath))
+            //if (File.Exists(imagePath))
+            //{
+            //    Bitmap bm = new Bitmap(imagePath);
+            //    //Image image = Image.FromFile(imagePath);
+            //    pcb_SanPham.Image = bm;
+            //}
+            //else
+            //{
+            //    // Xử lý tệp không tồn tại, ví dụ: hiển thị hình ảnh mặc định
+            //    pcb_SanPham.Image = null;
+            //}
+        }
+
+        private void dtgv_DSSP_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dtgv_DSSP.Rows.Count > 0)
             {
-                Bitmap bm = new Bitmap(imagePath);
-                //Image image = Image.FromFile(imagePath);
+                btn_luu.Enabled = true;
+                btn_them.Enabled = true;
+                btn_sua.Enabled = true;
+                txt_masp.Enabled = false;
+                txt_tensp.Enabled = false;
+                txt_sl.Enabled = false;
+                cbb_thuonghieu.Enabled = false;
+                txt_dongiaban.Enabled = false;
+                txt_hinhanh.Enabled = false;
+                txt_mota.Enabled = false;
+
+                txt_masp.Text = dtgv_DSSP.CurrentRow.Cells[0].Value.ToString();
+                txt_tensp.Text = dtgv_DSSP.CurrentRow.Cells[1].Value.ToString();
+                txt_sl.Text = dtgv_DSSP.CurrentRow.Cells[3].Value.ToString();
+                cbo_loaiSP.SelectedValue = dtgv_DSSP.CurrentRow.Cells[6].Value.ToString();
+                cbb_thuonghieu.SelectedValue = dtgv_DSSP.CurrentRow.Cells[7].Value.ToString();
+                txt_mota.Text = dtgv_DSSP.CurrentRow.Cells[8].Value.ToString();
+                //txt_dongianhap.Text = dtgv_DSSP.CurrentRow.Cells[3].Value.ToString();
+                txt_dongiaban.Text = dtgv_DSSP.CurrentRow.Cells[10].Value.ToString();
+                checkFileName = dtgv_DSSP.CurrentRow.Cells[11].Value.ToString();
+                txt_hinhanh.Text = checkFileName;
+                Bitmap bm = new Bitmap(Application.StartupPath + @"\img\" + checkFileName);
                 pcb_SanPham.Image = bm;
-            }
-            else
-            {
-                // Xử lý tệp không tồn tại, ví dụ: hiển thị hình ảnh mặc định
-                pcb_SanPham.Image = null;
+
             }
         }
     }
