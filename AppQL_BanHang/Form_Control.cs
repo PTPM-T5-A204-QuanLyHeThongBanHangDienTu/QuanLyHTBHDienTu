@@ -15,6 +15,7 @@ namespace AppQL_BanHang
         public Form_Control()
         {
             InitializeComponent();
+    
         }
         private Form currentFormChild;
         private void OpenChildForm(Form childForm)
@@ -33,42 +34,34 @@ namespace AppQL_BanHang
             childForm.Show()
 ;
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_Brand_Click(object sender, EventArgs e)
         {
-            Form_Main fm = new Form_Main();
-            fm.ShowDialog();
+            Form_Main fr = new Form_Main();
+            OpenChildForm(fr);
         }
 
-        private void button10_Click(object sender, EventArgs e)
-        {
-            Form_ResgisterUser fm = new Form_ResgisterUser();
-            fm.ShowDialog();
-        }
-
-        private void Form_Control_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_Category_Click(object sender, EventArgs e)
         {
             Form_Category fr = new Form_Category();
-            fr.ShowDialog();
+            OpenChildForm(fr);
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btn_Products_Click(object sender, EventArgs e)
         {
-            //Form_Product fr = new Form_Product();
-            //fr.ShowDialog();
+            Form_Product fr = new Form_Product();
+            OpenChildForm(fr);
+   
+        }
+        private void btn_dangxuat_Click(object sender, EventArgs e)
+        {
+             OpenChildForm(new Form_Product());
+             btn_dangxuat.BackColor = Color.FromArgb(102, 102, 255);
+        }
 
-            OpenChildForm(new Form_Product());
-            //Button_BanHang.BackColor = Color.Indigo;
-            //Button_DonHang.BackColor = Color.Indigo;
-
-            button5.BackColor = Color.FromArgb(102, 102, 255);
-            //Button_kh.BackColor = Color.Indigo;
-            //Button_Nhansu.BackColor = Color.Indigo;
-            //Button_BaoCao.BackColor = Color.Indigo;
+        private void btn_User_Click(object sender, EventArgs e)
+        {
+            Form_ResgisterUser fr = new Form_ResgisterUser();
+            OpenChildForm(fr);
         }
     }
 }

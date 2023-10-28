@@ -210,5 +210,10 @@ namespace AppQL_BanHang
 
             }
         }
+
+        private void Form_Product_SizeChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

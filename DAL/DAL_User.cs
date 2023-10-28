@@ -82,5 +82,24 @@ namespace AppQL_BanHang
             }
 
         }
+        public bool Detele_User(string Id)
+        {
+            try
+            {
+                DataRow dong = da_SinhVien.Tables["tbl_customer"].Rows.Find(Id);
+
+                if (dong != null)
+                {
+                    dong.Delete();
+                }
+                MySqlCommandBuilder build = new MySqlCommandBuilder(da);
+                da.Update(da_SinhVien, "tbl_customer");
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }

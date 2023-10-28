@@ -21,8 +21,7 @@ namespace AppQL_BanHang
         public void load()
         {
             DataTable dt = cat.load();
-            dtg_DataGridView1.DataSource = dt;
-            dtg_DataGridView1.Columns[0].Visible = false;
+            dtg_Category.DataSource = dt;
             databingding(dt);
 
         }
@@ -74,5 +73,6 @@ namespace AppQL_BanHang
                 load();
             }
         }
+
     }
 }

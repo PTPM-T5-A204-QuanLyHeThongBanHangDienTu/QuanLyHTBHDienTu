@@ -23,8 +23,7 @@ namespace AppQL_BanHang
         public void load()
         {
             DataTable dt = user.load();
-            dtg_DataGridView1.DataSource = dt;
-            dtg_DataGridView1.Columns[0].Visible = false;
+            dtg_User.DataSource = dt;
             databingding(dt);
         }
 
@@ -35,39 +34,40 @@ namespace AppQL_BanHang
         }
         public void databingding(DataTable dtd)
         {
-            txt_id.DataBindings.Clear();
-            txt_name.DataBindings.Clear();
-            txt_DiaChi.DataBindings.Clear();
+            txt_Id.DataBindings.Clear();
+            txt_Name.DataBindings.Clear();
+            txt_Diachi.DataBindings.Clear();
             txt_City.DataBindings.Clear();
             txt_Country.DataBindings.Clear();
             txt_City.DataBindings.Clear();
             txt_Zipcode.DataBindings.Clear();
             txt_Phone.DataBindings.Clear();
-            txt_adminEmail.DataBindings.Clear();
-            txt_adminPass.DataBindings.Clear();
+            txt_Email.DataBindings.Clear();
+            txt_Pass.DataBindings.Clear();
 
-            txt_id.DataBindings.Add("text",dtd, "id");
-            txt_name.DataBindings.Add("text", dtd, "name");
-            txt_DiaChi.DataBindings.Add("text", dtd, "address");
+            txt_Id.DataBindings.Add("text",dtd, "id");
+            txt_Name.DataBindings.Add("text", dtd, "name");
+            txt_Diachi.DataBindings.Add("text", dtd, "address");
             txt_City.DataBindings.Add("text", dtd, "city");
             txt_Country.DataBindings.Add("text", dtd, "country");
             txt_Zipcode.DataBindings.Add("text", dtd, "zipcode");
             txt_Phone.DataBindings.Add("text", dtd, "phone");
-            txt_adminEmail.DataBindings.Add("text", dtd, "email");
-            txt_adminPass.DataBindings.Add("text", dtd, "password");
+            txt_Email.DataBindings.Add("text", dtd, "email");
+            txt_Pass.DataBindings.Add("text", dtd, "password");
         }
-        private void btn_CustomButton1_Click(object sender, EventArgs e)
+
+        private void btn_them_Click(object sender, EventArgs e)
         {
-            string id = txt_id.Text;
-            string name = txt_name.Text;
-            string address = txt_DiaChi.Text;
+            string id = txt_Id.Text;
+            string name = txt_Name.Text;
+            string address = txt_Diachi.Text;
             string city = txt_City.Text;
             string country = txt_Country.Text;
             string zipcode = txt_Zipcode.Text;
             string phone = txt_Phone.Text;
-            string email = txt_adminEmail.Text.Trim();
-            string pass = txt_adminPass.Text;
-            int kq = user.Check_Connect(txt_id.Text);
+            string email = txt_Email.Text.Trim();
+            string pass = txt_Pass.Text;
+            int kq = user.Check_Connect(txt_Id.Text);
             if (kq == -1)
             {
                 MessageBox.Show("Câu lệnh không hợp lệ");
@@ -80,18 +80,18 @@ namespace AppQL_BanHang
             }
             if (kq == 0)
             {
-                if (user.Insert_User(id,name,address,city,country,zipcode,phone,email,pass))
+                if (user.Insert_User(id, name, address, city, country, zipcode, phone, email, pass))
                 {
                     MessageBox.Show("Thêm Thành Công");
-                    txt_id.Clear();
-                    txt_name.Clear();
-                    txt_DiaChi.Clear();
+                    txt_Id.Clear();
+                    txt_Name.Clear();
+                    txt_Diachi.Clear();
                     txt_City.Clear();
                     txt_Country.Clear();
                     txt_Zipcode.Clear();
                     txt_Phone.Clear();
-                    txt_adminEmail.Clear();
-                    txt_adminPass.Clear();
+                    txt_Email.Clear();
+                    txt_Pass.Clear();
                 }
                 else
                 {
@@ -100,6 +100,22 @@ namespace AppQL_BanHang
 
 
             }
+        }
+
+        private void btn_Xoa_Click(object sender, EventArgs e)
+        {
+            DialogResult dlr = MessageBox.Show("Bạn có muốn xóa?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dlr == DialogResult.Yes)
+            {
+                user.Detele_User(txt_Id.Text);
+                MessageBox.Show("Đã Xóa");
+                load();
+            }
+        }
+
+        private void btn_LamMoi_Click(object sender, EventArgs e)
+        {
+            load();
         }
     }
 }

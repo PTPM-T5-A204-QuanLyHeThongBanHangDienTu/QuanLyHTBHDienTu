@@ -21,16 +21,17 @@ namespace AppQL_BanHang
         public void load()
         {
             DataTable dt = brand.load();
-            dtg_DataGridView1.DataSource = dt;
+            dtg_Brands.DataSource = dt;
             databingding(dt);
-            dtg_DataGridView1.Columns[0].Visible = false;
+            dtg_Brands.Columns[0].Visible = false;
         }
         public void databingding(DataTable dtd)
         {
-            txt_idBrand.DataBindings.Clear();
-            txt_nameBrand.DataBindings.Clear();
-            txt_idBrand.DataBindings.Add("text", dtd, "brandId");
-            txt_nameBrand.DataBindings.Add("text", dtd, "brandName");
+            txt_BrandId.DataBindings.Clear();
+            txt_BrandName.DataBindings.Clear();
+
+            txt_BrandId.DataBindings.Add("text", dtd, "brandId");
+            txt_BrandName.DataBindings.Add("text", dtd, "brandName");
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -40,10 +41,10 @@ namespace AppQL_BanHang
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            string MH = txt_idBrand.Text;
-            string TH = txt_nameBrand.Text;
+            string MH = txt_BrandId.Text;
+            string TH = txt_BrandName.Text;
 
-            int kq = brand.Check_Connect(txt_idBrand.Text);
+            int kq = brand.Check_Connect(txt_BrandId.Text);
             if (kq == -1)
             {
                 MessageBox.Show("Câu lệnh không hợp lệ");
@@ -68,11 +69,16 @@ namespace AppQL_BanHang
             DialogResult dlr = MessageBox.Show("Bạn có muốn xóa?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dlr == DialogResult.Yes)
             {
-                brand.Detele_Brand(txt_idBrand.Text);
+                brand.Detele_Brand(txt_BrandId.Text);
                 MessageBox.Show("Đã Xóa");
                 load();
             }
             
+        }
+
+        private void btn_LamMoi_Click(object sender, EventArgs e)
+        {
+            load();
         }
     }
 }
