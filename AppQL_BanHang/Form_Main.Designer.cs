@@ -35,10 +35,10 @@
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txt_BrandName = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_BrandId = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btn_LamMoi = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Update = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Xoa = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Them = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_lammoi = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_sua = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_xoa = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_them = new Guna.UI2.WinForms.Guna2Button();
             this.btn_luu = new Guna.UI2.WinForms.Guna2Button();
             this.dtg_Brands = new Guna.UI2.WinForms.Guna2DataGridView();
             this.txt_timkiem = new Guna.UI2.WinForms.Guna2TextBox();
@@ -56,7 +56,7 @@
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(514, 172);
             this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(138, 21);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(138, 27);
             this.guna2HtmlLabel1.TabIndex = 69;
             this.guna2HtmlLabel1.Text = "Name";
             // 
@@ -70,7 +70,7 @@
             this.guna2HtmlLabel9.Location = new System.Drawing.Point(259, 172);
             this.guna2HtmlLabel9.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(138, 21);
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(138, 27);
             this.guna2HtmlLabel9.TabIndex = 68;
             this.guna2HtmlLabel9.Text = "ID";
             // 
@@ -112,75 +112,77 @@
             this.txt_BrandId.Size = new System.Drawing.Size(200, 36);
             this.txt_BrandId.TabIndex = 66;
             // 
-            // btn_LamMoi
+            // btn_lammoi
             // 
-            this.btn_LamMoi.BorderRadius = 6;
-            this.btn_LamMoi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_LamMoi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_LamMoi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_LamMoi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_LamMoi.FillColor = System.Drawing.Color.SlateBlue;
-            this.btn_LamMoi.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_LamMoi.ForeColor = System.Drawing.Color.Black;
-            this.btn_LamMoi.Location = new System.Drawing.Point(749, 432);
-            this.btn_LamMoi.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_LamMoi.Name = "btn_LamMoi";
-            this.btn_LamMoi.Size = new System.Drawing.Size(135, 37);
-            this.btn_LamMoi.TabIndex = 65;
-            this.btn_LamMoi.Text = "LamMoi";
-            this.btn_LamMoi.Click += new System.EventHandler(this.btn_LamMoi_Click);
+            this.btn_lammoi.BorderRadius = 6;
+            this.btn_lammoi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_lammoi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_lammoi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_lammoi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_lammoi.FillColor = System.Drawing.Color.SlateBlue;
+            this.btn_lammoi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_lammoi.ForeColor = System.Drawing.Color.Black;
+            this.btn_lammoi.Location = new System.Drawing.Point(749, 432);
+            this.btn_lammoi.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_lammoi.Name = "btn_lammoi";
+            this.btn_lammoi.Size = new System.Drawing.Size(135, 37);
+            this.btn_lammoi.TabIndex = 65;
+            this.btn_lammoi.Text = "LamMoi";
+            this.btn_lammoi.Click += new System.EventHandler(this.btn_LamMoi_Click);
             // 
-            // btn_Update
+            // btn_sua
             // 
-            this.btn_Update.BorderRadius = 6;
-            this.btn_Update.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Update.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Update.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Update.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Update.FillColor = System.Drawing.Color.SlateBlue;
-            this.btn_Update.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_Update.ForeColor = System.Drawing.Color.Black;
-            this.btn_Update.Location = new System.Drawing.Point(749, 364);
-            this.btn_Update.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Update.Name = "btn_Update";
-            this.btn_Update.Size = new System.Drawing.Size(135, 37);
-            this.btn_Update.TabIndex = 64;
-            this.btn_Update.Text = "Sua";
+            this.btn_sua.BorderRadius = 6;
+            this.btn_sua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_sua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_sua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_sua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_sua.FillColor = System.Drawing.Color.SlateBlue;
+            this.btn_sua.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_sua.ForeColor = System.Drawing.Color.Black;
+            this.btn_sua.Location = new System.Drawing.Point(749, 364);
+            this.btn_sua.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_sua.Name = "btn_sua";
+            this.btn_sua.Size = new System.Drawing.Size(135, 37);
+            this.btn_sua.TabIndex = 64;
+            this.btn_sua.Text = "Sua";
+            this.btn_sua.Click += new System.EventHandler(this.btn_Update_Click);
             // 
-            // btn_Xoa
+            // btn_xoa
             // 
-            this.btn_Xoa.BorderRadius = 6;
-            this.btn_Xoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Xoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Xoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Xoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Xoa.FillColor = System.Drawing.Color.SlateBlue;
-            this.btn_Xoa.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_Xoa.ForeColor = System.Drawing.Color.Black;
-            this.btn_Xoa.Location = new System.Drawing.Point(749, 291);
-            this.btn_Xoa.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(135, 37);
-            this.btn_Xoa.TabIndex = 63;
-            this.btn_Xoa.Text = "Xoa";
-            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
+            this.btn_xoa.BorderRadius = 6;
+            this.btn_xoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_xoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_xoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_xoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_xoa.FillColor = System.Drawing.Color.SlateBlue;
+            this.btn_xoa.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_xoa.ForeColor = System.Drawing.Color.Black;
+            this.btn_xoa.Location = new System.Drawing.Point(749, 291);
+            this.btn_xoa.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_xoa.Name = "btn_xoa";
+            this.btn_xoa.Size = new System.Drawing.Size(135, 37);
+            this.btn_xoa.TabIndex = 63;
+            this.btn_xoa.Text = "Xoa";
+            this.btn_xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
             // 
-            // btn_Them
+            // btn_them
             // 
-            this.btn_Them.BorderRadius = 6;
-            this.btn_Them.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Them.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Them.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Them.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Them.FillColor = System.Drawing.Color.SlateBlue;
-            this.btn_Them.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_Them.ForeColor = System.Drawing.Color.Black;
-            this.btn_Them.Location = new System.Drawing.Point(749, 217);
-            this.btn_Them.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(135, 37);
-            this.btn_Them.TabIndex = 62;
-            this.btn_Them.Text = "Them";
+            this.btn_them.BorderRadius = 6;
+            this.btn_them.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_them.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_them.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_them.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_them.FillColor = System.Drawing.Color.SlateBlue;
+            this.btn_them.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_them.ForeColor = System.Drawing.Color.Black;
+            this.btn_them.Location = new System.Drawing.Point(749, 217);
+            this.btn_them.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_them.Name = "btn_them";
+            this.btn_them.Size = new System.Drawing.Size(135, 37);
+            this.btn_them.TabIndex = 62;
+            this.btn_them.Text = "Them";
+            this.btn_them.Click += new System.EventHandler(this.btn_Them_Click_1);
             // 
             // btn_luu
             // 
@@ -198,6 +200,7 @@
             this.btn_luu.Size = new System.Drawing.Size(135, 37);
             this.btn_luu.TabIndex = 61;
             this.btn_luu.Text = "Lưu";
+            this.btn_luu.Click += new System.EventHandler(this.btn_luu_Click);
             // 
             // dtg_Brands
             // 
@@ -227,6 +230,7 @@
             this.dtg_Brands.Location = new System.Drawing.Point(259, 289);
             this.dtg_Brands.Name = "dtg_Brands";
             this.dtg_Brands.RowHeadersVisible = false;
+            this.dtg_Brands.RowHeadersWidth = 51;
             this.dtg_Brands.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.RowHeaderSelect;
             this.dtg_Brands.Size = new System.Drawing.Size(455, 180);
             this.dtg_Brands.TabIndex = 60;
@@ -251,6 +255,7 @@
             this.dtg_Brands.ThemeStyle.RowsStyle.Height = 22;
             this.dtg_Brands.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtg_Brands.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtg_Brands.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtg_Brands_CellClick);
             // 
             // txt_timkiem
             // 
@@ -285,7 +290,7 @@
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(332, 11);
             this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(342, 34);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(342, 83);
             this.guna2HtmlLabel2.TabIndex = 82;
             this.guna2HtmlLabel2.Text = "QUẢN LÝ THƯƠNG HIỆU";
             // 
@@ -298,13 +303,14 @@
             this.Controls.Add(this.guna2HtmlLabel9);
             this.Controls.Add(this.txt_BrandName);
             this.Controls.Add(this.txt_BrandId);
-            this.Controls.Add(this.btn_LamMoi);
-            this.Controls.Add(this.btn_Update);
-            this.Controls.Add(this.btn_Xoa);
-            this.Controls.Add(this.btn_Them);
+            this.Controls.Add(this.btn_lammoi);
+            this.Controls.Add(this.btn_sua);
+            this.Controls.Add(this.btn_xoa);
+            this.Controls.Add(this.btn_them);
             this.Controls.Add(this.btn_luu);
             this.Controls.Add(this.dtg_Brands);
             this.Name = "Form_Main";
+            this.Load += new System.EventHandler(this.Form_Main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Brands)).EndInit();
             this.ResumeLayout(false);
 
@@ -318,10 +324,10 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2TextBox txt_BrandName;
         private Guna.UI2.WinForms.Guna2TextBox txt_BrandId;
-        private Guna.UI2.WinForms.Guna2Button btn_LamMoi;
-        private Guna.UI2.WinForms.Guna2Button btn_Update;
-        private Guna.UI2.WinForms.Guna2Button btn_Xoa;
-        private Guna.UI2.WinForms.Guna2Button btn_Them;
+        private Guna.UI2.WinForms.Guna2Button btn_lammoi;
+        private Guna.UI2.WinForms.Guna2Button btn_sua;
+        private Guna.UI2.WinForms.Guna2Button btn_xoa;
+        private Guna.UI2.WinForms.Guna2Button btn_them;
         private Guna.UI2.WinForms.Guna2Button btn_luu;
         private Guna.UI2.WinForms.Guna2DataGridView dtg_Brands;
         private Guna.UI2.WinForms.Guna2TextBox txt_timkiem;

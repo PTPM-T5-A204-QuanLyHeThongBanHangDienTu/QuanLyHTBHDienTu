@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BLL">
+      <HintPath>..\BLL\bin\Debug\BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="DTO">
+      <HintPath>..\DTO\bin\Debug\DTO.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2">
       <HintPath>..\..\..\..\CuaNgta\QuanLyShopQuanAo_Nguyễn Thị Bích Phượng-2001207202\QuanLyShopQuanAo\QuanLyShopQuanAo\bin\Debug\Guna.UI2.dll</HintPath>
     </Reference>
