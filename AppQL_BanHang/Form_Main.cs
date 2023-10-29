@@ -138,31 +138,23 @@ namespace AppQL_BanHang
             }
             else
             {
-
-                //sp.Tensp = txt_tensp.Text;
-                //sp.Soluong = int.Parse(txt_sl.Text);
-                //sp.Dongiaban = float.Parse(txt_dongiaban.Text);
-                //sp.Dongianhap = float.Parse(txt_dongianhap.Text);
-                //sp.Ghichu = txt_ghichu.Text;
-                //sp.Hinhanh = txt_hinhanh.Text;
-                //sp.Masp = int.Parse(txt_masp.Text);
-                //sp.Maloai = int.Parse(cbo_loaiSP.SelectedValue.ToString());
-                //if (SanPhamDAO.Instance.updateSP(sp))
-                //{
-                //    showSP();
-                msgBox("Sửa sản phẩm thành công!");
-                //}
-                //else
-                //{
-                //    msgBox("Sửa sản phẩm không được", true);
-                //}
+                brand2.brandId = int.Parse(txt_BrandId.Text);
+                brand2.brandName = txt_BrandName.Text;
+                if (brand.Update_Brand(brand2))
+                {
+                    msgBox("Sửa brand thành công!");
+                    load();
+                }
+                
+                else
+                    msgBox("Sửa brand thất bại", true);
+              
             }
         }
 
         private void btn_Them_Click_1(object sender, EventArgs e)
         {
             btn_LamMoi_Click(sender, e);
-            //txt_BrandId.Enabled = true;
             txt_BrandId.Text =  brand.TimMaBrand().ToString();
             txt_BrandName.Enabled = true;
             btn_sua.Enabled = false;
@@ -180,9 +172,12 @@ namespace AppQL_BanHang
         private void Form_Main_Load(object sender, EventArgs e)
         {
             load();
-            btn_luu.Enabled = false;
-            btn_sua.Enabled = false;
-            btn_them.Enabled = false;
+            txt_BrandId.Enabled=false;
+            txt_BrandName.Enabled=false;
+            //btn_luu.Enabled = false;
+            //btn_sua.Enabled = false;
+            //btn_them.Enabled = false;
+            //btn_xoa.Enabled = false;
         }
 
         private void dtg_Brands_CellClick(object sender, DataGridViewCellEventArgs e)

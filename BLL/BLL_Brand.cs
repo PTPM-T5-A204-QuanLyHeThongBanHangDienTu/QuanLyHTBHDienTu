@@ -36,6 +36,10 @@ namespace BLL
         {
             return dal_brand.Detele_Brand(brandid);
         }
+        public bool Update_Brand(tbl_brand brand)
+        {
+            return dal_brand.Update_Brand(brand);
+        }
         public int TimMaBrand()
         {
             return dal_brand.TimMaBrand();

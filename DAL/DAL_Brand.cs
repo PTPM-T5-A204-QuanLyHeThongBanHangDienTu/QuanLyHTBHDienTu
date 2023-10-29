@@ -98,6 +98,25 @@ namespace AppQL_BanHang
                 return false;
             }
         }
+        public bool Update_Brand(tbl_brand brand)
+        {
+            try
+            {
+                DataRow dong = da_brand.Tables["tbl_brand"].Rows.Find(brand.brandId);
+
+                if (dong != null)
+                {
+                    dong[1] = brand.brandName;
+                }
+                MySqlCommandBuilder build = new MySqlCommandBuilder(da);
+                da.Update(da_brand, "tbl_brand");
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
         //public MySqlDataAdapter TimMaBrand()
         //{
         //    try
