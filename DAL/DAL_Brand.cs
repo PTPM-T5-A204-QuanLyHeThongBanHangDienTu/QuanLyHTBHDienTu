@@ -117,22 +117,22 @@ namespace AppQL_BanHang
                 return false;
             }
         }
-        //public MySqlDataAdapter TimMaBrand()
-        //{
-        //    try
-        //    {
-        //        if (conn.State == ConnectionState.Closed)
-        //        {
-        //            conn.Open();
-        //        }
-        //        string selectKhachHang = "SELECT brandId FROM tbl_brand ORDER BY brandId DESC LIMIT 1; ";
-        //        MySqlDataAdapter da = new MySqlDataAdapter(selectKhachHang, conn);
-        //        if (conn.State == ConnectionState.Open)
-        //            conn.Close();
-        //        return da;
-        //    }
-        //    catch { return null; }
-        //}
+        public MySqlDataAdapter TimKiemBrand(string searchkey)
+        {
+            try
+            {
+                if (conn.State == ConnectionState.Closed)
+                {
+                    conn.Open();
+                }
+                string selectbrand = "SELECT * FROM tbl_brand WHERE brandName LIKE '%"+ searchkey + "%'; ";
+                MySqlDataAdapter da = new MySqlDataAdapter(selectbrand, conn);
+                if (conn.State == ConnectionState.Open)
+                    conn.Close();
+                return da;
+            }
+            catch { return null; }
+        }
         public int TimMaBrand()
         {
             int maxBrandId = 0;

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
 using BLL;
+using MySql.Data.MySqlClient;
 //using BL
 namespace AppQL_BanHang
 {
@@ -187,6 +188,25 @@ namespace AppQL_BanHang
                 txt_BrandId.Text = dtg_Brands.CurrentRow.Cells[0].Value.ToString();
                 txt_BrandName.Text = dtg_Brands.CurrentRow.Cells[1].Value.ToString();
             }
+        }
+
+        private void txt_timkiem_TextChanged(object sender, EventArgs e)
+        {
+            string name = txt_timkiem.Text.Trim();
+            if (name == "")
+            {
+                Form_Main_Load(sender, e);
+            }
+            else
+            {
+                string timkiem = txt_timkiem.Text.Trim();
+                MySqlDataAdapter da = new MySqlDataAdapter();
+                da = brand.TimKiemBrand(timkiem);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dtg_Brands.DataSource = dt;
+            }
+
         }
     }
 }

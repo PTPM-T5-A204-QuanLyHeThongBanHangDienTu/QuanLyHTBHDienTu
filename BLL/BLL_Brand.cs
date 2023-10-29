@@ -44,6 +44,10 @@ namespace BLL
         {
             return dal_brand.TimMaBrand();
         }
+        public MySqlDataAdapter TimKiemBrand(string searchkey)
+        {
+           return dal_brand.TimKiemBrand(searchkey);
+        }
 
     }
 }
