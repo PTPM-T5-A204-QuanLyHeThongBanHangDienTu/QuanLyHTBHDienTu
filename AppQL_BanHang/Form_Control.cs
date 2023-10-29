@@ -34,11 +34,6 @@ namespace AppQL_BanHang
             childForm.Show()
 ;
         }
-        private void btn_Brand_Click(object sender, EventArgs e)
-        {
-            Form_Main fr = new Form_Main();
-            OpenChildForm(fr);
-        }
 
         private void btn_Category_Click(object sender, EventArgs e)
         {
@@ -61,6 +56,12 @@ namespace AppQL_BanHang
         private void btn_User_Click(object sender, EventArgs e)
         {
             Form_ResgisterUser fr = new Form_ResgisterUser();
+            OpenChildForm(fr);
+        }
+
+        private void btn_Brands_Click(object sender, EventArgs e)
+        {
+            Form_Main fr = new Form_Main();
             OpenChildForm(fr);
         }
     }

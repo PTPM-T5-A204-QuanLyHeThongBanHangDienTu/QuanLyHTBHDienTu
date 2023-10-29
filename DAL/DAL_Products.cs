@@ -48,6 +48,38 @@ namespace DAL
                 return -1;
             }
         }
+        public int TimMaPro()
+        {
+            int maxProId = 0;
+
+            try
+            {
+                if (conn.State == ConnectionState.Closed)
+                {
+                    conn.Open();
+                }
+                string selectMaxCatId = "SELECT MAX(productId) FROM tbl_product;";
+                MySqlCommand cmd = new MySqlCommand(selectMaxCatId, conn);
+                object result = cmd.ExecuteScalar();
+                if (result != DBNull.Value && result != null)
+                {
+                    maxProId = Convert.ToInt32(result) + 1;
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                if (conn.State == ConnectionState.Open)
+                {
+                    conn.Close();
+                }
+            }
+
+            return maxProId;
+        }
         public DataTable load()
         {
             string caulenh = "select * from tbl_product ";
@@ -66,10 +98,10 @@ namespace DAL
 
                 dong[0] = product.productId;
                 dong[1] = product.productName;
-                dong[2] = product.productQuantity;
-                dong[7] = product.catId;
-                dong[8] = product.brandId;
-                dong[9] = product.product_desc;
+                dong[3] = product.productQuantity;
+                dong[6] = product.catId;
+                dong[7] = product.brandId;
+                dong[8] = product.product_desc;
                 dong[10] = product.price;
                 dong[11] = product.image;
                 da_products.Tables["tbl_product"].Rows.Add(dong);
@@ -82,6 +114,60 @@ namespace DAL
                 return false;
             }
 
+        }
+        public bool Detele_Product(int productId)
+        {
+            try
+            {
+                DataRow dong = da_products.Tables["tbl_product"].Rows.Find(productId);
+
+                if (dong != null)
+                {
+                    dong.Delete();
+                }
+                MySqlCommandBuilder build = new MySqlCommandBuilder(da);
+                da.Update(da_products, "tbl_product");
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public bool Update_Product(tbl_product product)
+        {
+            try
+            {
+                DataRow dong = da_products.Tables["tbl_product"].Rows.Find(product.productId);
+
+                if (dong != null)
+                {
+                    dong[1] = product.productName;
+                }
+                MySqlCommandBuilder build = new MySqlCommandBuilder(da);
+                da.Update(da_products, "tbl_product");
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public MySqlDataAdapter TimKiemProduct(string searchkey)
+        {
+            try
+            {
+                if (conn.State == ConnectionState.Closed)
+                {
+                    conn.Open();
+                }
+                string selectbrand = "SELECT * FROM tbl_product WHERE productName LIKE '%" + searchkey + "%'; ";
+                MySqlDataAdapter da = new MySqlDataAdapter(selectbrand, conn);
+                if (conn.State == ConnectionState.Open)
+                    conn.Close();
+                return da;
+            }
+            catch { return null; }
         }
 
     }

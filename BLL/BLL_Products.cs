@@ -31,5 +31,21 @@ namespace BLL
         {
             return da_Products.Insert_Proucts(products);
         }
+        public bool Detele_Product(int productID)
+        {
+            return da_Products.Detele_Product(productID);
+        }
+        public bool Update_Product(tbl_product products)
+        {
+            return da_Products.Update_Product(products);
+        }
+        public int TimMaPro()
+        {
+            return da_Products.TimMaPro();
+        }
+        public MySqlDataAdapter TimKiemBrand(string searchkey)
+        {
+            return da_Products.TimKiemProduct(searchkey);
+        }
     }
 }
