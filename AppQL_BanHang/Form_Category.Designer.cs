@@ -36,9 +36,9 @@
             this.txt_CatName = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_CatId = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_LamMoi = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Update = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Xoa = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Them = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_sua = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_xoa = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_them = new Guna.UI2.WinForms.Guna2Button();
             this.btn_luu = new Guna.UI2.WinForms.Guna2Button();
             this.dtg_Category = new Guna.UI2.WinForms.Guna2DataGridView();
             this.txt_timkiem = new Guna.UI2.WinForms.Guna2TextBox();
@@ -86,7 +86,7 @@
             this.txt_CatName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_CatName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_CatName.Location = new System.Drawing.Point(428, 207);
-            this.txt_CatName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_CatName.Margin = new System.Windows.Forms.Padding(4);
             this.txt_CatName.Name = "txt_CatName";
             this.txt_CatName.PasswordChar = '\0';
             this.txt_CatName.PlaceholderText = "";
@@ -106,7 +106,7 @@
             this.txt_CatId.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_CatId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_CatId.Location = new System.Drawing.Point(88, 207);
-            this.txt_CatId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_CatId.Margin = new System.Windows.Forms.Padding(4);
             this.txt_CatId.Name = "txt_CatId";
             this.txt_CatId.PasswordChar = '\0';
             this.txt_CatId.PlaceholderText = "";
@@ -130,59 +130,61 @@
             this.btn_LamMoi.Size = new System.Drawing.Size(180, 46);
             this.btn_LamMoi.TabIndex = 75;
             this.btn_LamMoi.Text = "Làm Mới";
+            this.btn_LamMoi.Click += new System.EventHandler(this.btn_LamMoi_Click);
             // 
-            // btn_Update
+            // btn_sua
             // 
-            this.btn_Update.BorderRadius = 6;
-            this.btn_Update.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Update.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Update.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Update.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Update.FillColor = System.Drawing.Color.SlateBlue;
-            this.btn_Update.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_Update.ForeColor = System.Drawing.Color.Black;
-            this.btn_Update.Location = new System.Drawing.Point(744, 386);
-            this.btn_Update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_Update.Name = "btn_Update";
-            this.btn_Update.Size = new System.Drawing.Size(180, 46);
-            this.btn_Update.TabIndex = 74;
-            this.btn_Update.Text = "Sửa";
+            this.btn_sua.BorderRadius = 6;
+            this.btn_sua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_sua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_sua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_sua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_sua.FillColor = System.Drawing.Color.SlateBlue;
+            this.btn_sua.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_sua.ForeColor = System.Drawing.Color.Black;
+            this.btn_sua.Location = new System.Drawing.Point(744, 386);
+            this.btn_sua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_sua.Name = "btn_sua";
+            this.btn_sua.Size = new System.Drawing.Size(180, 46);
+            this.btn_sua.TabIndex = 74;
+            this.btn_sua.Text = "Sửa";
+            this.btn_sua.Click += new System.EventHandler(this.btn_Update_Click);
             // 
-            // btn_Xoa
+            // btn_xoa
             // 
-            this.btn_Xoa.BorderRadius = 6;
-            this.btn_Xoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Xoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Xoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Xoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Xoa.FillColor = System.Drawing.Color.SlateBlue;
-            this.btn_Xoa.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_Xoa.ForeColor = System.Drawing.Color.Black;
-            this.btn_Xoa.Location = new System.Drawing.Point(744, 297);
-            this.btn_Xoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(180, 46);
-            this.btn_Xoa.TabIndex = 73;
-            this.btn_Xoa.Text = "Xóa";
-            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
+            this.btn_xoa.BorderRadius = 6;
+            this.btn_xoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_xoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_xoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_xoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_xoa.FillColor = System.Drawing.Color.SlateBlue;
+            this.btn_xoa.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_xoa.ForeColor = System.Drawing.Color.Black;
+            this.btn_xoa.Location = new System.Drawing.Point(744, 297);
+            this.btn_xoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_xoa.Name = "btn_xoa";
+            this.btn_xoa.Size = new System.Drawing.Size(180, 46);
+            this.btn_xoa.TabIndex = 73;
+            this.btn_xoa.Text = "Xóa";
+            this.btn_xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
             // 
-            // btn_Them
+            // btn_them
             // 
-            this.btn_Them.BorderRadius = 6;
-            this.btn_Them.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Them.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Them.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Them.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Them.FillColor = System.Drawing.Color.SlateBlue;
-            this.btn_Them.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_Them.ForeColor = System.Drawing.Color.Black;
-            this.btn_Them.Location = new System.Drawing.Point(744, 206);
-            this.btn_Them.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(180, 46);
-            this.btn_Them.TabIndex = 72;
-            this.btn_Them.Text = "Xóa";
-            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
+            this.btn_them.BorderRadius = 6;
+            this.btn_them.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_them.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_them.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_them.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_them.FillColor = System.Drawing.Color.SlateBlue;
+            this.btn_them.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_them.ForeColor = System.Drawing.Color.Black;
+            this.btn_them.Location = new System.Drawing.Point(744, 206);
+            this.btn_them.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_them.Name = "btn_them";
+            this.btn_them.Size = new System.Drawing.Size(180, 46);
+            this.btn_them.TabIndex = 72;
+            this.btn_them.Text = "Thêm";
+            this.btn_them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // btn_luu
             // 
@@ -200,6 +202,7 @@
             this.btn_luu.Size = new System.Drawing.Size(180, 46);
             this.btn_luu.TabIndex = 71;
             this.btn_luu.Text = "Lưu";
+            this.btn_luu.Click += new System.EventHandler(this.btn_luu_Click);
             // 
             // dtg_Category
             // 
@@ -214,7 +217,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtg_Category.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtg_Category.ColumnHeadersHeight = 15;
+            this.dtg_Category.ColumnHeadersHeight = 25;
             this.dtg_Category.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -227,7 +230,7 @@
             this.dtg_Category.EnableHeadersVisualStyles = true;
             this.dtg_Category.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtg_Category.Location = new System.Drawing.Point(88, 294);
-            this.dtg_Category.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtg_Category.Margin = new System.Windows.Forms.Padding(4);
             this.dtg_Category.Name = "dtg_Category";
             this.dtg_Category.RowHeadersVisible = false;
             this.dtg_Category.RowHeadersWidth = 51;
@@ -246,7 +249,7 @@
             this.dtg_Category.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.dtg_Category.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dtg_Category.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dtg_Category.ThemeStyle.HeaderStyle.Height = 15;
+            this.dtg_Category.ThemeStyle.HeaderStyle.Height = 25;
             this.dtg_Category.ThemeStyle.ReadOnly = false;
             this.dtg_Category.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dtg_Category.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -255,6 +258,7 @@
             this.dtg_Category.ThemeStyle.RowsStyle.Height = 22;
             this.dtg_Category.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtg_Category.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtg_Category.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtg_Category_CellClick);
             // 
             // txt_timkiem
             // 
@@ -278,6 +282,7 @@
             this.txt_timkiem.SelectedText = "";
             this.txt_timkiem.Size = new System.Drawing.Size(259, 36);
             this.txt_timkiem.TabIndex = 80;
+            this.txt_timkiem.TextChanged += new System.EventHandler(this.txt_timkiem_TextChanged);
             // 
             // guna2HtmlLabel2
             // 
@@ -306,12 +311,12 @@
             this.Controls.Add(this.txt_CatName);
             this.Controls.Add(this.txt_CatId);
             this.Controls.Add(this.btn_LamMoi);
-            this.Controls.Add(this.btn_Update);
-            this.Controls.Add(this.btn_Xoa);
-            this.Controls.Add(this.btn_Them);
+            this.Controls.Add(this.btn_sua);
+            this.Controls.Add(this.btn_xoa);
+            this.Controls.Add(this.btn_them);
             this.Controls.Add(this.btn_luu);
             this.Controls.Add(this.dtg_Category);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_Category";
             this.Text = "Form_Category";
             this.Load += new System.EventHandler(this.Form_Category_Load);
@@ -327,9 +332,9 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_CatName;
         private Guna.UI2.WinForms.Guna2TextBox txt_CatId;
         private Guna.UI2.WinForms.Guna2Button btn_LamMoi;
-        private Guna.UI2.WinForms.Guna2Button btn_Update;
-        private Guna.UI2.WinForms.Guna2Button btn_Xoa;
-        private Guna.UI2.WinForms.Guna2Button btn_Them;
+        private Guna.UI2.WinForms.Guna2Button btn_sua;
+        private Guna.UI2.WinForms.Guna2Button btn_xoa;
+        private Guna.UI2.WinForms.Guna2Button btn_them;
         private Guna.UI2.WinForms.Guna2Button btn_luu;
         private Guna.UI2.WinForms.Guna2DataGridView dtg_Category;
         private Guna.UI2.WinForms.Guna2TextBox txt_timkiem;

@@ -131,7 +131,11 @@ namespace AppQL_BanHang
                 if (kq == 0)
                 {
                     if (brand.Insert_Brand(brand2))
+                    {
                         msgBox("Thêm brand thành công!");
+                        load();
+                    }
+                       
                     else
                         msgBox("Thêm brand thất bại", true);
                 }
