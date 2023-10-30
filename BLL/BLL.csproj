@@ -54,6 +54,7 @@
     <Compile Include="BLL_Brand.cs" />
     <Compile Include="BLL_Category.cs" />
     <Compile Include="BLL_Products.cs" />
+    <Compile Include="BLL_User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

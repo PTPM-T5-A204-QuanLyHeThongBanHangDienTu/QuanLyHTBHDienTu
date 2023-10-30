@@ -331,7 +331,7 @@ namespace AppQL_BanHang
                 prod.image = txt_hinhanh.Text;
                 if (products.Update_Product(prod))
                 {
-                    msgBox("Sửa loại sản phẩm thành công!");
+                    msgBox("Sửa thành công!");
                     LoadAfterInsert();
                     load();
                 }

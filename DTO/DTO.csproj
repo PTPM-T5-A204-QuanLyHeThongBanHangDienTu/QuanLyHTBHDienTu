@@ -44,6 +44,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tbl_brand.cs" />
     <Compile Include="tbl_category.cs" />
+    <Compile Include="tbl_customer.cs" />
     <Compile Include="tbl_product.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
