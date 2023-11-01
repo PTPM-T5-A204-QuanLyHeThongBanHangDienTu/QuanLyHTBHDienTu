@@ -73,5 +73,11 @@ namespace AppQL_BanHang
             Form_Main fr = new Form_Main();
             OpenChildForm(fr);
         }
+
+        private void btn_Orders_Click_1(object sender, EventArgs e)
+        {
+            Form_Order fr = new Form_Order();
+            OpenChildForm(fr);
+        }
     }
 }

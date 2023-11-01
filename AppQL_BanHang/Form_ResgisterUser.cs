@@ -113,6 +113,8 @@ namespace AppQL_BanHang
         private void btn_them_Click(object sender, EventArgs e)
         {
             btn_LamMoi_Click(sender, e);
+            btn_Sua.Enabled =   false;
+            btn_Xoa.Enabled = false;
             txt_Id.Text = user.TimMaCus().ToString();
             txt_Name.Enabled = true;
             txt_Diachi.Enabled = true;

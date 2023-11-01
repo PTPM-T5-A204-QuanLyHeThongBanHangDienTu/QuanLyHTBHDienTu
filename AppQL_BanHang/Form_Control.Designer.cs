@@ -216,6 +216,7 @@
             this.btn_Orders.Size = new System.Drawing.Size(169, 45);
             this.btn_Orders.TabIndex = 4;
             this.btn_Orders.Text = "Orders";
+            this.btn_Orders.Click += new System.EventHandler(this.btn_Orders_Click_1);
             // 
             // btn_dangxuat
             // 
