@@ -143,6 +143,13 @@ namespace DAL
                 if (dong != null)
                 {
                     dong[1] = product.productName;
+                    dong[3] = product.productQuantity;
+                    dong[6] = product.catId;
+                    dong[7] = product.brandId;
+                    dong[8] = product.product_desc;
+                    dong[10] = product.price;
+                    dong[11] = product.image;
+
                 }
                 MySqlCommandBuilder build = new MySqlCommandBuilder(da);
                 da.Update(da_products, "tbl_product");

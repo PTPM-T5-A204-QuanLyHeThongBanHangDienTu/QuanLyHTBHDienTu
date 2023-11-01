@@ -45,9 +45,6 @@ namespace DAL
                 string query = "SELECT * FROM `tbl_order` WHERE DATE(date_order) = '"+ search + "'";
                 da = new MySqlDataAdapter(query, conn);
                 da.Fill(da_Orders, "tbl_order");
-                DataColumn[] keys = new DataColumn[1];
-                keys[0] = da_Orders.Tables["tbl_order"].Columns[0];
-                da_Orders.Tables["tbl_order"].PrimaryKey = keys;
                 return da_Orders.Tables["tbl_order"];
             }
             catch { return null; }

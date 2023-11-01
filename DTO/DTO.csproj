@@ -97,7 +97,7 @@
     <Compile Include="tbe_Customer.cs" />
     <Compile Include="tbl_brand.cs" />
     <Compile Include="tbl_category.cs" />
-    <Compile Include="tbl_Orders.cs" />
+    <Compile Include="tbl_customer.cs" />
     <Compile Include="tbl_product.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -105,6 +105,7 @@
     <Compile Include="BLL_Customer.cs" />
     <Compile Include="BLL_Orders.cs" />
     <Compile Include="BLL_Products.cs" />
+    <Compile Include="BLL_User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

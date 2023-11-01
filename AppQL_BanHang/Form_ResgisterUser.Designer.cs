@@ -298,7 +298,8 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtg_User.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtg_User.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtg_User.ColumnHeadersHeight = 4;
+            this.dtg_User.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -324,7 +325,7 @@
             this.dtg_User.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dtg_User.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.dtg_User.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dtg_User.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtg_User.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtg_User.ThemeStyle.HeaderStyle.Height = 4;
             this.dtg_User.ThemeStyle.ReadOnly = false;
             this.dtg_User.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -334,6 +335,7 @@
             this.dtg_User.ThemeStyle.RowsStyle.Height = 22;
             this.dtg_User.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtg_User.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtg_User.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtg_User_CellClick);
             // 
             // guna2HtmlLabel9
             // 
@@ -509,6 +511,7 @@
             this.btn_Sua.Size = new System.Drawing.Size(135, 29);
             this.btn_Sua.TabIndex = 63;
             this.btn_Sua.Text = "Sua";
+            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
             // 
             // btn_LamMoi
             // 
@@ -544,6 +547,7 @@
             this.btn_Luu.Size = new System.Drawing.Size(135, 29);
             this.btn_Luu.TabIndex = 65;
             this.btn_Luu.Text = "Luu";
+            this.btn_Luu.Click += new System.EventHandler(this.btn_Luu_Click);
             // 
             // txt_timkiem
             // 
@@ -567,6 +571,7 @@
             this.txt_timkiem.SelectedText = "";
             this.txt_timkiem.Size = new System.Drawing.Size(194, 29);
             this.txt_timkiem.TabIndex = 66;
+            this.txt_timkiem.TextChanged += new System.EventHandler(this.txt_timkiem_TextChanged);
             // 
             // Form_ResgisterUser
             // 
