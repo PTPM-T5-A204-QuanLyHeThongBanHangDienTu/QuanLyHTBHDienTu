@@ -45,6 +45,8 @@
             this.guna2Panel17 = new Guna.UI2.WinForms.Guna2Panel();
             this.Panel_menu = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Panel_body.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
             this.guna2Panel9.SuspendLayout();
             this.Panel_logo.SuspendLayout();
@@ -53,21 +55,24 @@
             this.guna2Panel17.SuspendLayout();
             this.Panel_menu.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Panel_body
             // 
             this.Panel_body.BackColor = System.Drawing.Color.GhostWhite;
             this.Panel_body.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Panel_body.Controls.Add(this.pictureBox1);
             this.Panel_body.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel_body.Location = new System.Drawing.Point(169, 0);
             this.Panel_body.Margin = new System.Windows.Forms.Padding(2);
             this.Panel_body.Name = "Panel_body";
-            this.Panel_body.Size = new System.Drawing.Size(765, 509);
+            this.Panel_body.Size = new System.Drawing.Size(1316, 692);
             this.Panel_body.TabIndex = 6;
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.BackColor = System.Drawing.Color.GhostWhite;
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 157);
             this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2);
@@ -77,11 +82,12 @@
             // 
             // btn_Category
             // 
+            this.btn_Category.BackColor = System.Drawing.Color.GhostWhite;
             this.btn_Category.BorderColor = System.Drawing.Color.White;
             this.btn_Category.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_Category.FillColor = System.Drawing.Color.Transparent;
             this.btn_Category.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btn_Category.ForeColor = System.Drawing.Color.White;
+            this.btn_Category.ForeColor = System.Drawing.Color.Indigo;
             this.btn_Category.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btn_Category.Location = new System.Drawing.Point(0, 0);
             this.btn_Category.Margin = new System.Windows.Forms.Padding(4);
@@ -105,11 +111,12 @@
             // 
             // btn_Products
             // 
+            this.btn_Products.BackColor = System.Drawing.Color.GhostWhite;
             this.btn_Products.BorderColor = System.Drawing.Color.White;
             this.btn_Products.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_Products.FillColor = System.Drawing.Color.Transparent;
             this.btn_Products.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btn_Products.ForeColor = System.Drawing.Color.White;
+            this.btn_Products.ForeColor = System.Drawing.Color.Indigo;
             this.btn_Products.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btn_Products.Location = new System.Drawing.Point(0, 0);
             this.btn_Products.Margin = new System.Windows.Forms.Padding(2);
@@ -145,6 +152,7 @@
             // 
             // guna2PictureBox1
             // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.GhostWhite;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
@@ -156,11 +164,12 @@
             // 
             // btn_User
             // 
+            this.btn_User.BackColor = System.Drawing.Color.GhostWhite;
             this.btn_User.BorderColor = System.Drawing.Color.White;
             this.btn_User.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_User.FillColor = System.Drawing.Color.Transparent;
             this.btn_User.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btn_User.ForeColor = System.Drawing.Color.White;
+            this.btn_User.ForeColor = System.Drawing.Color.Indigo;
             this.btn_User.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btn_User.Location = new System.Drawing.Point(0, 0);
             this.btn_User.Margin = new System.Windows.Forms.Padding(2);
@@ -174,11 +183,12 @@
             // 
             // btn_Brands
             // 
+            this.btn_Brands.BackColor = System.Drawing.Color.GhostWhite;
             this.btn_Brands.BorderColor = System.Drawing.Color.White;
             this.btn_Brands.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_Brands.FillColor = System.Drawing.Color.Transparent;
             this.btn_Brands.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Brands.ForeColor = System.Drawing.Color.White;
+            this.btn_Brands.ForeColor = System.Drawing.Color.Indigo;
             this.btn_Brands.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btn_Brands.Location = new System.Drawing.Point(0, 0);
             this.btn_Brands.Margin = new System.Windows.Forms.Padding(2);
@@ -202,11 +212,12 @@
             // 
             // btn_Orders
             // 
+            this.btn_Orders.BackColor = System.Drawing.Color.GhostWhite;
             this.btn_Orders.BorderColor = System.Drawing.Color.White;
             this.btn_Orders.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_Orders.FillColor = System.Drawing.Color.Transparent;
             this.btn_Orders.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btn_Orders.ForeColor = System.Drawing.Color.White;
+            this.btn_Orders.ForeColor = System.Drawing.Color.Indigo;
             this.btn_Orders.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btn_Orders.Location = new System.Drawing.Point(0, 0);
             this.btn_Orders.Margin = new System.Windows.Forms.Padding(2);
@@ -220,12 +231,12 @@
             // 
             // btn_dangxuat
             // 
-            this.btn_dangxuat.BackColor = System.Drawing.Color.Indigo;
+            this.btn_dangxuat.BackColor = System.Drawing.Color.GhostWhite;
             this.btn_dangxuat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_dangxuat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_dangxuat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_dangxuat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_dangxuat.FillColor = System.Drawing.Color.Indigo;
+            this.btn_dangxuat.FillColor = System.Drawing.Color.GhostWhite;
             this.btn_dangxuat.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btn_dangxuat.ForeColor = System.Drawing.Color.Red;
             this.btn_dangxuat.Location = new System.Drawing.Point(19, 409);
@@ -248,7 +259,7 @@
             // 
             // Panel_menu
             // 
-            this.Panel_menu.BackColor = System.Drawing.Color.Indigo;
+            this.Panel_menu.BackColor = System.Drawing.Color.GhostWhite;
             this.Panel_menu.Controls.Add(this.btn_dangxuat);
             this.Panel_menu.Controls.Add(this.guna2Panel17);
             this.Panel_menu.Controls.Add(this.guna2Panel5);
@@ -261,7 +272,7 @@
             this.Panel_menu.Location = new System.Drawing.Point(0, 0);
             this.Panel_menu.Margin = new System.Windows.Forms.Padding(2);
             this.Panel_menu.Name = "Panel_menu";
-            this.Panel_menu.Size = new System.Drawing.Size(169, 509);
+            this.Panel_menu.Size = new System.Drawing.Size(169, 692);
             this.Panel_menu.TabIndex = 5;
             // 
             // guna2Panel6
@@ -274,17 +285,29 @@
             this.guna2Panel6.Size = new System.Drawing.Size(169, 45);
             this.guna2Panel6.TabIndex = 8;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1316, 692);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form_Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(934, 509);
+            this.ClientSize = new System.Drawing.Size(1485, 692);
             this.Controls.Add(this.Panel_body);
             this.Controls.Add(this.Panel_menu);
             this.Name = "Form_Control";
             this.Text = "Form_Control";
+            this.Panel_body.ResumeLayout(false);
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel9.ResumeLayout(false);
             this.Panel_logo.ResumeLayout(false);
@@ -293,6 +316,7 @@
             this.guna2Panel17.ResumeLayout(false);
             this.Panel_menu.ResumeLayout(false);
             this.guna2Panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -315,5 +339,6 @@
         private Guna.UI2.WinForms.Guna2Panel Panel_menu;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

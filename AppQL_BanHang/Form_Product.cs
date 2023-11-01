@@ -387,5 +387,10 @@ namespace AppQL_BanHang
                 dtgv_DSSP.DataSource = dt;
             }
         }
+
+        private void btn_Close_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -187,5 +187,10 @@ namespace AppQL_BanHang
                 dtg_Category.DataSource = dt;
             }
         }
+
+        private void btn_Close_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

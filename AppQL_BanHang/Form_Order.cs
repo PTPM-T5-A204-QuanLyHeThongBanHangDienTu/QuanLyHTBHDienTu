@@ -13,6 +13,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ThuVien_GiaoDien;
 
 namespace AppQL_BanHang
 {
@@ -25,67 +26,18 @@ namespace AppQL_BanHang
         public Form_Order()
         {
             InitializeComponent();
-            this.Load += Form_Order_Load;
-            guna2DataGridView1.CellClick += Dtg_Order_CellClick;
+            guna2DataGridView1.CellClick += guna2DataGridView1_CellClick;
             btn_Search.Click += btn_LamMoi_Click;
             btn_Reset.Click += btn_LamMoi_Click;
             guna2DataGridView1.ReadOnly = true;
-            guna2DataGridView1.SelectionChanged += Dtg_Order_SelectionChanged;
             load();
             btn_Delete.Click += btn_Xoa_Click;
-        }
-
-
-
-        private void Dtg_Order_SelectionChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-
-
-
-    
-
-        private void Dtg_Order_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int CustomerId = 0;
-         
-            if (guna2DataGridView1.Rows.Count > 0)
-            {
-                txt_Id.Text = guna2DataGridView1.CurrentRow.Cells[0].Value.ToString();
-                txt_NgayDat.Text = guna2DataGridView1.CurrentRow.Cells[8].Value.ToString();
-                CustomerId = int.Parse(guna2DataGridView1.CurrentRow.Cells[3].Value.ToString());
-                tbe_Customer = customer.SearchByIdCustomer(CustomerId);
-                txt_Diachi.Text = tbe_Customer != null ? tbe_Customer.Address : "Không tìm thấy khách hàng";
-                txt_Emails.Text = tbe_Customer != null ? tbe_Customer.Email : "Không tìm thấy khách hàng";
-                txt_TenKhach.Text = tbe_Customer != null ? tbe_Customer.Name : "Không tìm thấy khách hàng";
-                txt_SDT.Text = tbe_Customer != null ? tbe_Customer.Phone.ToString() : "Không tìm thất khách hàng";
-                txt_TenSP.Text = guna2DataGridView1.CurrentRow.Cells[2].Value.ToString();
-                txt_Gia.Text = guna2DataGridView1.CurrentRow.Cells[5].Value.ToString();
-                txt_Soluong.Text = guna2DataGridView1.CurrentRow.Cells[4].Value.ToString();
-                string path = guna2DataGridView1.CurrentRow.Cells[6].Value.ToString();
-                string imagePath = path != null ? "C:\\Users\\dat03\\OneDrive\\Máy tính\\img\\1bef665118.jpg" : "C:\\Users\\dat03\\OneDrive\\Máy tính\\img" + path;
-                long fileSize = new FileInfo(imagePath).Length; // Get the file size in bytes
-                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-                // Convert the file size to a human-readable format
-                string sizeInKB = (fileSize / 1024).ToString("N0") + " KB";
-                string sizeInMB = (fileSize / (1024 * 1024)).ToString("N2") + " MB";
-                pictureBox1.Image = Image.FromFile(imagePath); 
-
-
-            }
-        }
-
-        private void Form_Order_Load(object sender, EventArgs e)
-        {
-           
+            guna2DataGridView1.Columns[7].Visible = false;
         }
 
         public void load()
         {
             DataTable dt = orders.getDataTableOrder();
-
             // Nếu DataGridView đã được tải dữ liệu lần đầu tiên, xóa dữ liệu hiện tại
             if (isLoaded)
             {
@@ -99,11 +51,26 @@ namespace AppQL_BanHang
 
             // Đánh dấu rằng DataGridView đã được tải dữ liệu lần đầu tiên
             isLoaded = true;
+            Load_Enable();
+
+        }
+        private void Load_Enable()
+        {
+            txt_Id.Enabled = false;
+            txt_Gia.Enabled = false;
+            txt_Diachi.Enabled = false;
+            txt_Emails.Enabled = false;
+            txt_TenKhach.Enabled = false;
+            txt_SDT.Enabled = false;
+            txt_Phone.Enabled = false;
+            txt_TenSP.Enabled = false;
+            txt_Soluong.Enabled = false;
+            txt_NgayDat.Enabled = false;
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-            int id = int.Parse(txt_IdOrder.Text.ToString());
+            int id = int.Parse(txt_Id.Text.ToString());
             string message = "Bạn chắc chắn muốn xóa";
             string title = "Xóa hóa đơn";
             MessageBoxButtons buttons = MessageBoxButtons.YesNo;
@@ -118,6 +85,7 @@ namespace AppQL_BanHang
                 }
             }
             guna2DataGridView1.Refresh();
+            btn_LamMoi_Click(sender,e);
         }
 
         private void btn_LamMoi_Click(object sender, EventArgs e)
@@ -161,6 +129,35 @@ namespace AppQL_BanHang
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+            //int CustomerId = 0;
+
+            //if (guna2DataGridView1.Rows.Count > 0)
+            //{
+            //    txt_Id.Text = guna2DataGridView1.CurrentRow.Cells[0].Value.ToString();
+            //    txt_NgayDat.Text = guna2DataGridView1.CurrentRow.Cells[8].Value.ToString();
+            //    CustomerId = int.Parse(guna2DataGridView1.CurrentRow.Cells[3].Value.ToString());
+            //    tbe_Customer = customer.SearchByIdCustomer(CustomerId);
+            //    txt_Diachi.Text = tbe_Customer != null ? tbe_Customer.Address : "Không tìm thấy khách hàng";
+            //    txt_Emails.Text = tbe_Customer != null ? tbe_Customer.Email : "Không tìm thấy khách hàng";
+            //    txt_TenKhach.Text = tbe_Customer != null ? tbe_Customer.Name : "Không tìm thấy khách hàng";
+            //    txt_SDT.Text = tbe_Customer != null ? tbe_Customer.Phone.ToString() : "Không tìm thất khách hàng";
+            //    txt_TenSP.Text = guna2DataGridView1.CurrentRow.Cells[2].Value.ToString();
+            //    txt_Gia.Text = guna2DataGridView1.CurrentRow.Cells[5].Value.ToString();
+            //    txt_Soluong.Text = guna2DataGridView1.CurrentRow.Cells[4].Value.ToString();
+            //    string path = guna2DataGridView1.CurrentRow.Cells[6].Value.ToString();
+            //    string imagePath = path != null ? "C:\\Users\\dat03\\OneDrive\\Máy tính\\img\\1bef665118.jpg" : "C:\\Users\\dat03\\OneDrive\\Máy tính\\img\\" + path;
+            //    long fileSize = new FileInfo(imagePath).Length; // Get the file size in bytes
+            //    pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            //    // Convert the file size to a human-readable format
+            //    string sizeInKB = (fileSize / 1024).ToString("N0") + " KB";
+            //    string sizeInMB = (fileSize / (1024 * 1024)).ToString("N2") + " MB";
+            //    pictureBox1.Image = Image.FromFile(imagePath);
+            //}
+        }
+
+        private void guna2DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
             int CustomerId = 0;
 
             if (guna2DataGridView1.Rows.Count > 0)
@@ -172,7 +169,7 @@ namespace AppQL_BanHang
                 txt_Diachi.Text = tbe_Customer != null ? tbe_Customer.Address : "Không tìm thấy khách hàng";
                 txt_Emails.Text = tbe_Customer != null ? tbe_Customer.Email : "Không tìm thấy khách hàng";
                 txt_TenKhach.Text = tbe_Customer != null ? tbe_Customer.Name : "Không tìm thấy khách hàng";
-                txt_SDT.Text = tbe_Customer != null ? tbe_Customer.Phone.ToString() : "Không tìm thất khách hàng";
+                txt_SDT.Text = tbe_Customer != null ? "0" +tbe_Customer.Phone.ToString() : "Không tìm thất khách hàng";
                 txt_TenSP.Text = guna2DataGridView1.CurrentRow.Cells[2].Value.ToString();
                 txt_Gia.Text = guna2DataGridView1.CurrentRow.Cells[5].Value.ToString();
                 txt_Soluong.Text = guna2DataGridView1.CurrentRow.Cells[4].Value.ToString();
@@ -185,8 +182,12 @@ namespace AppQL_BanHang
                 string sizeInMB = (fileSize / (1024 * 1024)).ToString("N2") + " MB";
                 pictureBox1.Image = Image.FromFile(imagePath);
 
-
             }
+        }
+
+        private void btn_Close_Click(object sender, EventArgs e)
+        {
+            Close();    
         }
     }
 }

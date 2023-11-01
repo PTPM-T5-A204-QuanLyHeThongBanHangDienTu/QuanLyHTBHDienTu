@@ -16,13 +16,13 @@ namespace DTO
         string city;
         string country;
         string zipcode;
-        int phone;
+        string phone;
         string email;
         string password;
 
         public tbe_Customer() { }
 
-        public tbe_Customer(int id, string name, string address, string city, string country, string zipcode, int phone, string email, string password)
+        public tbe_Customer(int id, string name, string address, string city, string country, string zipcode, string phone, string email, string password)
         {
             this.Id = id;
             this.Name = name;
@@ -51,7 +51,7 @@ namespace DTO
         {
             this.Id = (int)row["Id"];
             this.Name = row["name"].ToString();
-            this.Phone = (int)row["phone"];
+            this.Phone = (string)row["phone"];
             this.Email= row["email"].ToString();
             this.Password = row["password"].ToString();
             this.City = row["city"].ToString();
@@ -68,7 +68,7 @@ namespace DTO
         public string City { get => city; set => city = value; }
         public string Country { get => country; set => country = value; }
         public string Zipcode { get => zipcode; set => zipcode = value; }
-        public int Phone { get => phone; set => phone = value; }
+        public string Phone { get => phone; set => phone = value; }
         public string Email { get => email; set => email = value; }
         public string Password { get => password; set => password = value; }
     }
