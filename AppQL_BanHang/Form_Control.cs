@@ -15,8 +15,17 @@ namespace AppQL_BanHang
         public Form_Control()
         {
             InitializeComponent();
+            btn_Orders.Click += Btn_Orders_Click;
     
         }
+
+        private void Btn_Orders_Click(object sender, EventArgs e)
+        {
+            Form_Order form_Order = new Form_Order();
+            OpenChildForm(form_Order);
+
+        }
+
         private Form currentFormChild;
         private void OpenChildForm(Form childForm)
         {
