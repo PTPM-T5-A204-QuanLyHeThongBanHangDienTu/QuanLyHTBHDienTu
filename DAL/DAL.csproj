@@ -96,6 +96,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL_Admin.cs" />
     <Compile Include="DAL_Brand.cs" />
     <Compile Include="DAL_Category.cs" />
     <Compile Include="DAL_Customer.cs" />

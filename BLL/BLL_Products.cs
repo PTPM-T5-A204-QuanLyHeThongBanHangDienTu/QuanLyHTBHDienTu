@@ -43,7 +43,7 @@ namespace BLL
         {
             return da_Products.TimMaPro();
         }
-        public MySqlDataAdapter TimKiemBrand(string searchkey)
+            public MySqlDataAdapter TimKiemBrand(string searchkey)
         {
             return da_Products.TimKiemProduct(searchkey);
         }

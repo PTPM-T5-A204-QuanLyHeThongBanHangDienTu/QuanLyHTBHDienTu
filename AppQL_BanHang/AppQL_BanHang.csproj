@@ -122,6 +122,12 @@
     <Compile Include="Form_Control.Designer.cs">
       <DependentUpon>Form_Control.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_LoginAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_LoginAdmin.Designer.cs">
+      <DependentUpon>Form_LoginAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,12 @@
     <Compile Include="Form_Product.Designer.cs">
       <DependentUpon>Form_Product.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_ResgisterAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ResgisterAdmin.Designer.cs">
+      <DependentUpon>Form_ResgisterAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_ResgisterUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +166,9 @@
     <EmbeddedResource Include="Form_Control.resx">
       <DependentUpon>Form_Control.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_LoginAdmin.resx">
+      <DependentUpon>Form_LoginAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Main.resx">
       <DependentUpon>Form_Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Product.resx">
       <DependentUpon>Form_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ResgisterAdmin.resx">
+      <DependentUpon>Form_ResgisterAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_ResgisterUser.resx">
       <DependentUpon>Form_ResgisterUser.cs</DependentUpon>

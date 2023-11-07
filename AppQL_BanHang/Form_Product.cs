@@ -47,6 +47,7 @@ namespace AppQL_BanHang
             btn_luu.Enabled = true;
             btn_them.Enabled = true;
             btn_sua.Enabled = true;
+            btn_chonanh.Enabled = false;
             txt_masp.Enabled = false;
             txt_tensp.Enabled = false;
             txt_sl.Enabled = false;
@@ -190,6 +191,8 @@ namespace AppQL_BanHang
                 btn_luu.Enabled = true;
                 btn_them.Enabled = true;
                 btn_sua.Enabled = true;
+                btn_chonanh.Enabled = false;
+
                 txt_masp.Enabled = false;
                 txt_tensp.Enabled = false;
                 txt_sl.Enabled = false;
@@ -233,6 +236,7 @@ namespace AppQL_BanHang
             cbo_loaiSP.Enabled = true;
             btn_sua.Enabled = false;
             btn_xoa.Enabled = false;
+            btn_chonanh.Enabled = true;
         }
         public void LoadAfterInsert()
         {

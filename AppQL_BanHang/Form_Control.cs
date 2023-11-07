@@ -58,8 +58,8 @@ namespace AppQL_BanHang
         }
         private void btn_dangxuat_Click(object sender, EventArgs e)
         {
-             OpenChildForm(new Form_Product());
-             btn_dangxuat.BackColor = Color.FromArgb(102, 102, 255);
+            Form_ResgisterAdmin fr = new Form_ResgisterAdmin();
+            OpenChildForm(fr);
         }
 
         private void btn_User_Click(object sender, EventArgs e)
@@ -78,6 +78,12 @@ namespace AppQL_BanHang
         {
             Form_Order fr = new Form_Order();
             OpenChildForm(fr);
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Form_LoginAdmin fr = new Form_LoginAdmin();
+            fr.ShowDialog();
         }
     }
 }

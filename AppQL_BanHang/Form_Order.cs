@@ -23,6 +23,7 @@ namespace AppQL_BanHang
         BLL_Orders orders = new BLL_Orders();
         BLL_Customer customer = new BLL_Customer();
         tbe_Customer tbe_Customer = new tbe_Customer();
+        private string checkFileName;
         public Form_Order()
         {
             InitializeComponent();
@@ -66,6 +67,7 @@ namespace AppQL_BanHang
             txt_TenSP.Enabled = false;
             txt_Soluong.Enabled = false;
             txt_NgayDat.Enabled = false;
+            txt_HinhAnh.Enabled = false;
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
@@ -173,14 +175,10 @@ namespace AppQL_BanHang
                 txt_TenSP.Text = guna2DataGridView1.CurrentRow.Cells[2].Value.ToString();
                 txt_Gia.Text = guna2DataGridView1.CurrentRow.Cells[5].Value.ToString();
                 txt_Soluong.Text = guna2DataGridView1.CurrentRow.Cells[4].Value.ToString();
-                string path = guna2DataGridView1.CurrentRow.Cells[6].Value.ToString();
-                string imagePath = path != null ? "C:\\Users\\dat03\\OneDrive\\Máy tính\\img\\1bef665118.jpg" : "C:\\Users\\dat03\\OneDrive\\Máy tính\\img\\" + path;
-                long fileSize = new FileInfo(imagePath).Length; // Get the file size in bytes
-                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-                // Convert the file size to a human-readable format
-                string sizeInKB = (fileSize / 1024).ToString("N0") + " KB";
-                string sizeInMB = (fileSize / (1024 * 1024)).ToString("N2") + " MB";
-                pictureBox1.Image = Image.FromFile(imagePath);
+                checkFileName = guna2DataGridView1.CurrentRow.Cells[6].Value.ToString();
+                txt_HinhAnh.Text = checkFileName;
+                Bitmap bm = new Bitmap(Application.StartupPath + @"\img\" + checkFileName);
+                guna2PictureBox1.Image = bm;
 
             }
         }

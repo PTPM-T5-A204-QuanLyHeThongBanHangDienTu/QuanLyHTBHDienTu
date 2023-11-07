@@ -48,7 +48,7 @@ namespace DAL
                             Id = reader.GetInt32("id"),
                             Name = reader.GetString("name"),
                             Password = reader.GetString("password"),
-                            Phone= reader.GetInt32("phone"),
+                            Phone= reader.GetString("phone"),
                             Email = reader.GetString("email"),
                             Address = reader.GetString("address"),
                             City = reader.GetString("city"),

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Control));
             this.Panel_body = new Guna.UI2.WinForms.Guna2Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.btn_Category = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
@@ -41,12 +42,13 @@
             this.btn_Brands = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.btn_Orders = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_dangxuat = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Admin = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel17 = new Guna.UI2.WinForms.Guna2Panel();
             this.Panel_menu = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.Panel_body.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2Panel8.SuspendLayout();
             this.guna2Panel9.SuspendLayout();
             this.Panel_logo.SuspendLayout();
@@ -55,7 +57,6 @@
             this.guna2Panel17.SuspendLayout();
             this.Panel_menu.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Panel_body
@@ -69,6 +70,17 @@
             this.Panel_body.Name = "Panel_body";
             this.Panel_body.Size = new System.Drawing.Size(1316, 692);
             this.Panel_body.TabIndex = 6;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1316, 692);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // guna2Panel2
             // 
@@ -229,23 +241,23 @@
             this.btn_Orders.Text = "Orders";
             this.btn_Orders.Click += new System.EventHandler(this.btn_Orders_Click_1);
             // 
-            // btn_dangxuat
+            // btn_Admin
             // 
-            this.btn_dangxuat.BackColor = System.Drawing.Color.GhostWhite;
-            this.btn_dangxuat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_dangxuat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_dangxuat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_dangxuat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_dangxuat.FillColor = System.Drawing.Color.GhostWhite;
-            this.btn_dangxuat.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btn_dangxuat.ForeColor = System.Drawing.Color.Red;
-            this.btn_dangxuat.Location = new System.Drawing.Point(19, 409);
-            this.btn_dangxuat.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_dangxuat.Name = "btn_dangxuat";
-            this.btn_dangxuat.Size = new System.Drawing.Size(135, 37);
-            this.btn_dangxuat.TabIndex = 9;
-            this.btn_dangxuat.Text = "Logout";
-            this.btn_dangxuat.Click += new System.EventHandler(this.btn_dangxuat_Click);
+            this.btn_Admin.BackColor = System.Drawing.Color.GhostWhite;
+            this.btn_Admin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Admin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Admin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Admin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Admin.FillColor = System.Drawing.Color.GhostWhite;
+            this.btn_Admin.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btn_Admin.ForeColor = System.Drawing.Color.Indigo;
+            this.btn_Admin.Location = new System.Drawing.Point(2, 398);
+            this.btn_Admin.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Admin.Name = "btn_Admin";
+            this.btn_Admin.Size = new System.Drawing.Size(167, 48);
+            this.btn_Admin.TabIndex = 9;
+            this.btn_Admin.Text = "Admin";
+            this.btn_Admin.Click += new System.EventHandler(this.btn_dangxuat_Click);
             // 
             // guna2Panel17
             // 
@@ -260,7 +272,8 @@
             // Panel_menu
             // 
             this.Panel_menu.BackColor = System.Drawing.Color.GhostWhite;
-            this.Panel_menu.Controls.Add(this.btn_dangxuat);
+            this.Panel_menu.Controls.Add(this.guna2Button1);
+            this.Panel_menu.Controls.Add(this.btn_Admin);
             this.Panel_menu.Controls.Add(this.guna2Panel17);
             this.Panel_menu.Controls.Add(this.guna2Panel5);
             this.Panel_menu.Controls.Add(this.guna2Panel6);
@@ -285,16 +298,23 @@
             this.guna2Panel6.Size = new System.Drawing.Size(169, 45);
             this.guna2Panel6.TabIndex = 8;
             // 
-            // pictureBox1
+            // guna2Button1
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1316, 692);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.guna2Button1.BackColor = System.Drawing.Color.GhostWhite;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.GhostWhite;
+            this.guna2Button1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.Red;
+            this.guna2Button1.Location = new System.Drawing.Point(2, 450);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(167, 48);
+            this.guna2Button1.TabIndex = 10;
+            this.guna2Button1.Text = "Logout";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // Form_Control
             // 
@@ -308,6 +328,7 @@
             this.Name = "Form_Control";
             this.Text = "Form_Control";
             this.Panel_body.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel9.ResumeLayout(false);
             this.Panel_logo.ResumeLayout(false);
@@ -316,7 +337,6 @@
             this.guna2Panel17.ResumeLayout(false);
             this.Panel_menu.ResumeLayout(false);
             this.guna2Panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -334,11 +354,12 @@
         private Guna.UI2.WinForms.Guna2Button btn_Brands;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         private Guna.UI2.WinForms.Guna2Button btn_Orders;
-        private Guna.UI2.WinForms.Guna2Button btn_dangxuat;
+        private Guna.UI2.WinForms.Guna2Button btn_Admin;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel17;
         private Guna.UI2.WinForms.Guna2Panel Panel_menu;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

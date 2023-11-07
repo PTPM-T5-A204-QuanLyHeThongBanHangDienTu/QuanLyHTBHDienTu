@@ -95,6 +95,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tbe_Customer.cs" />
+    <Compile Include="tbl_admin.cs" />
     <Compile Include="tbl_brand.cs" />
     <Compile Include="tbl_category.cs" />
     <Compile Include="tbl_customer.cs" />
