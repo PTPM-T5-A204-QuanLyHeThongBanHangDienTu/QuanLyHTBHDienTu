@@ -131,13 +131,13 @@ namespace AppQL_BanHang
                 cate.catName = txt_CatName.Text;
                 if (cat.Update_Cat(cate))
                 {
-                    msgBox("Sửa loại sản phẩm thành công!");
+                    msgBox("Thông tin thay đổi đã được lưu!");
                     LoadAfterInsert();
                     load();
                 }
 
                 else
-                    msgBox("Sửa loại sản phẩm thất bại", true);
+                    msgBox("Sửa thất bại", true);
 
             }
         }

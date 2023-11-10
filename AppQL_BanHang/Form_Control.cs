@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Org.BouncyCastle.Asn1.X500;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -82,8 +83,14 @@ namespace AppQL_BanHang
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            Form_LoginAdmin fr = new Form_LoginAdmin();
-            fr.ShowDialog();
+
+            if (MessageBox.Show("Bạn  muốn đăng xuất không ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            {
+                this.Hide();
+                this.Close();
+                Form_LoginAdmin dn = new Form_LoginAdmin();
+                dn.ShowDialog();
+            }
         }
     }
 }

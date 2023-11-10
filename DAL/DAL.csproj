@@ -100,6 +100,7 @@
     <Compile Include="DAL_Brand.cs" />
     <Compile Include="DAL_Category.cs" />
     <Compile Include="DAL_Customer.cs" />
+    <Compile Include="DAL_Modify.cs" />
     <Compile Include="DAL_Orders.cs" />
     <Compile Include="DAL_Products.cs" />
     <Compile Include="DAL_User.cs" />

@@ -29,7 +29,6 @@ namespace AppQL_BanHang
 
             connection.Open();
 
-            // Xây dựng câu truy vấn SQL để kiểm tra đăng nhập
             string query = "SELECT * FROM tbl_admin WHERE adminUser = @username AND adminPass = @password";
             MySqlCommand command = new MySqlCommand(query, connection);
             command.Parameters.AddWithValue("@username", username);
@@ -39,14 +38,12 @@ namespace AppQL_BanHang
 
             if (reader.Read())
             {
-                // Đăng nhập thành công
                 Form_Control fr = new Form_Control();
                 fr.ShowDialog();
                 this.Close();
             }
             else
             {
-                // Đăng nhập thất bại
                 MessageBox.Show("Đăng nhập thất bại. Vui lòng kiểm tra lại thông tin đăng nhập.");
             }
 
@@ -84,6 +81,20 @@ namespace AppQL_BanHang
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             this.Close ();
+        }
+
+        private void btn_Resgister_Click(object sender, EventArgs e)
+        {
+            Form_ResgisterAdmin fr = new Form_ResgisterAdmin();
+            fr.ShowDialog();
+            this.Close();
+        }
+
+        private void guna2HtmlLabel3_Click(object sender, EventArgs e)
+        {
+            Form_ResetPass fr = new Form_ResetPass();
+            fr.ShowDialog();
+
         }
     }
 }

@@ -132,12 +132,12 @@ namespace AppQL_BanHang
                 {
                     if (brand.Insert_Brand(brand2))
                     {
-                        msgBox("Thêm brand thành công!");
+                        msgBox("Thêm thành công!");
                         load();
                     }
                        
                     else
-                        msgBox("Thêm brand thất bại", true);
+                        msgBox("Thêm thất bại", true);
                 }
 
             }
@@ -147,12 +147,12 @@ namespace AppQL_BanHang
                 brand2.brandName = txt_BrandName.Text;
                 if (brand.Update_Brand(brand2))
                 {
-                    msgBox("Sửa brand thành công!");
+                    msgBox("Thông tin thay đổi đã được lưu!");
                     load();
                 }
                 
                 else
-                    msgBox("Sửa brand thất bại", true);
+                    msgBox("Sửa thất bại", true);
               
             }
         }

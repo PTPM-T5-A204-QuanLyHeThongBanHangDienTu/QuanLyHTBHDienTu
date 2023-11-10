@@ -39,7 +39,9 @@
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_Resgister = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.HidePass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShowPass)).BeginInit();
             this.panel1.SuspendLayout();
@@ -183,10 +185,10 @@
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.guna2Button2.Location = new System.Drawing.Point(179, 314);
+            this.guna2Button2.Location = new System.Drawing.Point(232, 314);
             this.guna2Button2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(92, 37);
+            this.guna2Button2.Size = new System.Drawing.Size(115, 37);
             this.guna2Button2.TabIndex = 88;
             this.guna2Button2.Text = "Thoát";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
@@ -194,6 +196,8 @@
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.guna2HtmlLabel3);
+            this.panel1.Controls.Add(this.btn_Resgister);
             this.panel1.Controls.Add(this.guna2HtmlLabel2);
             this.panel1.Controls.Add(this.txt_Email);
             this.panel1.Controls.Add(this.ShowPass);
@@ -209,6 +213,25 @@
             this.panel1.Size = new System.Drawing.Size(451, 443);
             this.panel1.TabIndex = 89;
             // 
+            // btn_Resgister
+            // 
+            this.btn_Resgister.BorderRadius = 6;
+            this.btn_Resgister.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Resgister.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Resgister.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Resgister.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Resgister.FillColor = System.Drawing.Color.Yellow;
+            this.btn_Resgister.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btn_Resgister.ForeColor = System.Drawing.Color.White;
+            this.btn_Resgister.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_Resgister.Location = new System.Drawing.Point(89, 314);
+            this.btn_Resgister.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Resgister.Name = "btn_Resgister";
+            this.btn_Resgister.Size = new System.Drawing.Size(115, 37);
+            this.btn_Resgister.TabIndex = 90;
+            this.btn_Resgister.Text = "Đăng Kí";
+            this.btn_Resgister.Click += new System.EventHandler(this.btn_Resgister_Click);
+            // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.AutoSize = false;
@@ -222,6 +245,21 @@
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(138, 28);
             this.guna2HtmlLabel2.TabIndex = 89;
             this.guna2HtmlLabel2.Text = "Login Admin";
+            // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.AutoSize = false;
+            this.guna2HtmlLabel3.AutoSizeHeightOnly = true;
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.Red;
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(243, 158);
+            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(108, 20);
+            this.guna2HtmlLabel3.TabIndex = 91;
+            this.guna2HtmlLabel3.Text = "Quên mật khẩu";
+            this.guna2HtmlLabel3.Click += new System.EventHandler(this.guna2HtmlLabel3_Click);
             // 
             // Form_LoginAdmin
             // 
@@ -253,5 +291,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2Button btn_Resgister;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
     }
 }

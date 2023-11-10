@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_Close = new Guna.UI2.WinForms.Guna2Button();
             this.txt_timkiem = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_Luu = new Guna.UI2.WinForms.Guna2Button();
@@ -50,7 +51,11 @@
             this.txt_adminUser = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_Name = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_Id = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txt_CheckPass = new Guna.UI2.WinForms.Guna2TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Admin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Close
@@ -89,7 +94,7 @@
             this.txt_timkiem.Margin = new System.Windows.Forms.Padding(2);
             this.txt_timkiem.Name = "txt_timkiem";
             this.txt_timkiem.PasswordChar = '\0';
-            this.txt_timkiem.PlaceholderText = "Nhập tên khách hàng";
+            this.txt_timkiem.PlaceholderText = "Nhập tên admin";
             this.txt_timkiem.SelectedText = "";
             this.txt_timkiem.Size = new System.Drawing.Size(194, 29);
             this.txt_timkiem.TabIndex = 93;
@@ -174,12 +179,12 @@
             this.guna2HtmlLabel10.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.guna2HtmlLabel10.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel10.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(742, 11);
+            this.guna2HtmlLabel10.Location = new System.Drawing.Point(737, 11);
             this.guna2HtmlLabel10.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
             this.guna2HtmlLabel10.Size = new System.Drawing.Size(270, 30);
             this.guna2HtmlLabel10.TabIndex = 88;
-            this.guna2HtmlLabel10.Text = "QUẢN LÝ ADMIN";
+            this.guna2HtmlLabel10.Text = "TÀI KHOẢN  ADMIN";
             // 
             // guna2HtmlLabel8
             // 
@@ -188,12 +193,12 @@
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(742, 332);
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(593, 291);
             this.guna2HtmlLabel8.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(84, 21);
             this.guna2HtmlLabel8.TabIndex = 87;
-            this.guna2HtmlLabel8.Text = "Mật khẩu";
+            this.guna2HtmlLabel8.Text = "Mật Khẩu";
             // 
             // guna2HtmlLabel7
             // 
@@ -202,7 +207,7 @@
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(742, 274);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(901, 233);
             this.guna2HtmlLabel7.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(138, 21);
@@ -216,12 +221,12 @@
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(742, 216);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(593, 233);
             this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(138, 21);
             this.guna2HtmlLabel4.TabIndex = 83;
-            this.guna2HtmlLabel4.Text = "adminUser";
+            this.guna2HtmlLabel4.Text = "Tên Đăng Nhập";
             // 
             // guna2HtmlLabel1
             // 
@@ -230,12 +235,12 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(742, 152);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(901, 175);
             this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(138, 21);
             this.guna2HtmlLabel1.TabIndex = 80;
-            this.guna2HtmlLabel1.Text = "adminName";
+            this.guna2HtmlLabel1.Text = "Tên Admin";
             // 
             // guna2HtmlLabel9
             // 
@@ -244,7 +249,7 @@
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel9.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel9.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(742, 94);
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(593, 174);
             this.guna2HtmlLabel9.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
             this.guna2HtmlLabel9.Size = new System.Drawing.Size(138, 21);
@@ -254,26 +259,26 @@
             // dtg_Admin
             // 
             this.dtg_Admin.AllowUserToAddRows = false;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.dtg_Admin.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtg_Admin.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dtg_Admin.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtg_Admin.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtg_Admin.ColumnHeadersHeight = 4;
             this.dtg_Admin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtg_Admin.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtg_Admin.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtg_Admin.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtg_Admin.Location = new System.Drawing.Point(416, 391);
             this.dtg_Admin.Name = "dtg_Admin";
@@ -335,7 +340,7 @@
             this.txt_Pass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Pass.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_Pass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Pass.Location = new System.Drawing.Point(742, 357);
+            this.txt_Pass.Location = new System.Drawing.Point(593, 316);
             this.txt_Pass.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Pass.Name = "txt_Pass";
             this.txt_Pass.PasswordChar = '\0';
@@ -358,7 +363,7 @@
             this.txt_Email.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Email.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_Email.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Email.Location = new System.Drawing.Point(742, 299);
+            this.txt_Email.Location = new System.Drawing.Point(901, 258);
             this.txt_Email.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Email.Name = "txt_Email";
             this.txt_Email.PasswordChar = '\0';
@@ -381,7 +386,7 @@
             this.txt_adminUser.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_adminUser.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_adminUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_adminUser.Location = new System.Drawing.Point(742, 241);
+            this.txt_adminUser.Location = new System.Drawing.Point(593, 258);
             this.txt_adminUser.Margin = new System.Windows.Forms.Padding(2);
             this.txt_adminUser.Name = "txt_adminUser";
             this.txt_adminUser.PasswordChar = '\0';
@@ -404,7 +409,7 @@
             this.txt_Name.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Name.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_Name.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Name.Location = new System.Drawing.Point(742, 177);
+            this.txt_Name.Location = new System.Drawing.Point(901, 200);
             this.txt_Name.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Name.Name = "txt_Name";
             this.txt_Name.PasswordChar = '\0';
@@ -427,7 +432,7 @@
             this.txt_Id.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Id.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_Id.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Id.Location = new System.Drawing.Point(742, 120);
+            this.txt_Id.Location = new System.Drawing.Point(593, 200);
             this.txt_Id.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Id.Name = "txt_Id";
             this.txt_Id.PasswordChar = '\0';
@@ -436,11 +441,55 @@
             this.txt_Id.Size = new System.Drawing.Size(256, 29);
             this.txt_Id.TabIndex = 68;
             // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.AutoSize = false;
+            this.guna2HtmlLabel2.AutoSizeHeightOnly = true;
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.Black;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(901, 291);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(170, 21);
+            this.guna2HtmlLabel2.TabIndex = 96;
+            this.guna2HtmlLabel2.Text = "Xác Nhân Mật Khẩu";
+            // 
+            // txt_CheckPass
+            // 
+            this.txt_CheckPass.BorderColor = System.Drawing.Color.Black;
+            this.txt_CheckPass.BorderRadius = 6;
+            this.txt_CheckPass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_CheckPass.DefaultText = "";
+            this.txt_CheckPass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_CheckPass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_CheckPass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_CheckPass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_CheckPass.FillColor = System.Drawing.Color.Snow;
+            this.txt_CheckPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_CheckPass.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_CheckPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_CheckPass.Location = new System.Drawing.Point(901, 316);
+            this.txt_CheckPass.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_CheckPass.Name = "txt_CheckPass";
+            this.txt_CheckPass.PasswordChar = '\0';
+            this.txt_CheckPass.PlaceholderText = "";
+            this.txt_CheckPass.SelectedText = "";
+            this.txt_CheckPass.Size = new System.Drawing.Size(256, 29);
+            this.txt_CheckPass.TabIndex = 95;
+            this.txt_CheckPass.TextChanged += new System.EventHandler(this.txt_CheckPass_TextChanged);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Form_ResgisterAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1484, 760);
+            this.Controls.Add(this.guna2HtmlLabel2);
+            this.Controls.Add(this.txt_CheckPass);
             this.Controls.Add(this.btn_Close);
             this.Controls.Add(this.txt_timkiem);
             this.Controls.Add(this.btn_Luu);
@@ -464,6 +513,7 @@
             this.Text = "Form_ResgisterAdmin";
             this.Load += new System.EventHandler(this.Form_ResgisterAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Admin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -489,5 +539,8 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_adminUser;
         private Guna.UI2.WinForms.Guna2TextBox txt_Name;
         private Guna.UI2.WinForms.Guna2TextBox txt_Id;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2TextBox txt_CheckPass;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

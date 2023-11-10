@@ -27,7 +27,6 @@ namespace AppQL_BanHang
         {
             DataTable dt = user.load();
             dtg_User.DataSource = dt;
-            databingding(dt);
         }
 
         private void From_ResgisterUser_Load(object sender, EventArgs e)
@@ -42,29 +41,6 @@ namespace AppQL_BanHang
                 MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
                 MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-        public void databingding(DataTable dtd)
-        {
-            //txt_Id.DataBindings.Clear();
-            //txt_Name.DataBindings.Clear();
-            //txt_Diachi.DataBindings.Clear();
-            //txt_City.DataBindings.Clear();
-            //txt_Country.DataBindings.Clear();
-            //txt_City.DataBindings.Clear();
-            //txt_Zipcode.DataBindings.Clear();
-            //txt_Phone.DataBindings.Clear();
-            //txt_Email.DataBindings.Clear();
-            //txt_Pass.DataBindings.Clear();
-
-            //txt_Id.DataBindings.Add("text",dtd, "id");
-            //txt_Name.DataBindings.Add("text", dtd, "name");
-            //txt_Diachi.DataBindings.Add("text", dtd, "address");
-            //txt_City.DataBindings.Add("text", dtd, "city");
-            //txt_Country.DataBindings.Add("text", dtd, "country");
-            //txt_Zipcode.DataBindings.Add("text", dtd, "zipcode");
-            //txt_Phone.DataBindings.Add("text", dtd, "phone");
-            //txt_Email.DataBindings.Add("text", dtd, "email");
-            //txt_Pass.DataBindings.Add("text", dtd, "password");
         }
         public void LoadStart()
         {
@@ -81,6 +57,7 @@ namespace AppQL_BanHang
             txt_Phone.Enabled = false;
             txt_Email.Enabled = false;
             txt_Pass.Enabled = false;
+            txt_CheckPass.Enabled = false;
 
         }
         public void LoadAfterInsert()
@@ -99,6 +76,7 @@ namespace AppQL_BanHang
             txt_Phone.Enabled = false;
             txt_Email.Enabled = false;
             txt_Pass.Enabled = false;
+            txt_CheckPass.Enabled = false;
 
             txt_Id.Text = null;
             txt_Name.Text = null;
@@ -109,6 +87,7 @@ namespace AppQL_BanHang
             txt_Phone.Text = null;
             txt_Email.Text = null;
             txt_Pass.Text = null;
+            txt_CheckPass.Text = null;
         }
         private void btn_them_Click(object sender, EventArgs e)
         {
@@ -123,6 +102,7 @@ namespace AppQL_BanHang
             txt_Zipcode.Enabled = true;
             txt_Phone.Enabled = true;
             txt_Email.Enabled = true;
+            txt_CheckPass.Enabled = true;
             txt_Pass.Enabled = true;
             txt_Id.Enabled = false;
 
@@ -155,6 +135,7 @@ namespace AppQL_BanHang
             txt_Pass.Text = null;
             txt_Zipcode.Text = null;
             txt_Phone.Text = null;
+            txt_CheckPass.Text = null;
             btn_Sua.Enabled = true;
             btn_Xoa.Enabled = true;
             btn_them.Enabled = true;
@@ -181,7 +162,7 @@ namespace AppQL_BanHang
                 }
                 if (kq == 1)
                 {
-                    MessageBox.Show("Mã sản phẩm đã tồn tại");
+                    MessageBox.Show("Mã đã tồn tại");
                     return;
                 }
                 if (kq == 0)
@@ -212,13 +193,13 @@ namespace AppQL_BanHang
 
                 if (user.Update_User(customer))
                 {
-                    msgBox("Sửa loại sản phẩm thành công!");
+                    msgBox("Thông tin thay đổi đã được lưu!");
                     LoadAfterInsert();
                     load();
                 }
 
                 else
-                    msgBox("Sửa loại sản phẩm thất bại", true);
+                    msgBox("Sửa thất bại", true);
             }
         }
 
@@ -238,6 +219,7 @@ namespace AppQL_BanHang
             txt_Phone.Enabled = true;
             txt_Email.Enabled = true;
             txt_Pass.Enabled = true;
+            txt_CheckPass.Enabled = true;
         }
 
         private void txt_timkiem_TextChanged(object sender, EventArgs e)
@@ -286,6 +268,7 @@ namespace AppQL_BanHang
                 txt_Phone.Text = dtg_User.CurrentRow.Cells[6].Value.ToString();
                 txt_Email.Text = dtg_User.CurrentRow.Cells[7].Value.ToString();
                 txt_Pass.Text = dtg_User.CurrentRow.Cells[8].Value.ToString();
+                txt_CheckPass.Text = dtg_User.CurrentRow.Cells[8].Value.ToString();
 
             }
         }
@@ -293,6 +276,19 @@ namespace AppQL_BanHang
         private void btn_Close_Click(object sender, EventArgs e)
         {
             Close();
+        }
+        ErrorProvider error = new ErrorProvider();
+        private void txt_CheckPass_TextChanged(object sender, EventArgs e)
+        {
+            if (txt_CheckPass.Text != txt_Pass.Text)
+            {
+                error.SetError(this, "Mật khẩu không trùng khớp! Mời nhập lại ");
+                btn_Luu.Enabled = false;
+            }
+            else
+            {
+                btn_Luu.Enabled = true;
+            }
         }
     }
 }

@@ -14,7 +14,7 @@ namespace DTO
         public string adminUser { get; set; }
         public string adminPassword { get; set; }
         public int level { get; set; }
-        public tbl_admin() { }
+        public tbl_admin(string v) { }
         public tbl_admin (tbl_admin admin)
         {
             adminID = admin.adminID;
@@ -24,5 +24,8 @@ namespace DTO
             adminPassword = admin.adminPassword;
         }
 
+        public tbl_admin()
+        {
+        }
     }
 }

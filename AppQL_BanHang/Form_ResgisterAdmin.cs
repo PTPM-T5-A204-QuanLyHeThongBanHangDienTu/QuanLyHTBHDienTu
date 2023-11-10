@@ -40,6 +40,7 @@ namespace AppQL_BanHang
             txt_Email.Enabled = false;
             txt_adminUser.Enabled = false;
             txt_Pass.Enabled = false;
+            txt_CheckPass.Enabled = false;
 
         }
         public void LoadAfterInsert()
@@ -54,12 +55,14 @@ namespace AppQL_BanHang
             txt_Email.Enabled = false;
             txt_adminUser.Enabled = false;
             txt_Pass.Enabled = false;
+            txt_CheckPass.Enabled = true;
 
             txt_Id.Text = null;
             txt_Name.Text = null;
             txt_Email.Text = null;
             txt_adminUser.Text = null;
             txt_Pass.Text = null;
+            txt_CheckPass.Text = null;
         }
 
         private void msgBox(string message, bool isError = false)
@@ -87,6 +90,7 @@ namespace AppQL_BanHang
             txt_adminUser.Enabled = true;
             txt_Pass.Enabled = true;
             txt_Id.Enabled = false;
+            txt_CheckPass.Enabled = true;
 
         }
 
@@ -124,6 +128,7 @@ namespace AppQL_BanHang
                 txt_Email.Text = dtg_Admin.CurrentRow.Cells[2].Value.ToString();
                 txt_adminUser.Text = dtg_Admin.CurrentRow.Cells[3].Value.ToString();
                 txt_Pass.Text = dtg_Admin.CurrentRow.Cells[4].Value.ToString();
+                txt_CheckPass.Text = dtg_Admin.CurrentRow.Cells[4].Value.ToString();
 
             }
         }
@@ -146,7 +151,7 @@ namespace AppQL_BanHang
                 }
                 if (kq == 1)
                 {
-                    MessageBox.Show("Mã sản phẩm đã tồn tại");
+                    MessageBox.Show("Mã đã tồn tại");
                     return;
                 }
                 if (kq == 0)
@@ -172,13 +177,13 @@ namespace AppQL_BanHang
 
                 if (ad.Update_Admin(admin))
                 {
-                    msgBox("Sửa loại sản phẩm thành công!");
+                    msgBox("Thông tin thay đổi đã được lưu!");
                     LoadAfterInsert();
                     load();
                 }
 
                 else
-                    msgBox("Sửa loại sản phẩm thất bại", true);
+                    msgBox("Sửa thất bại", true);
             }
         }
 
@@ -192,6 +197,7 @@ namespace AppQL_BanHang
             txt_Email.Enabled = true;
             txt_adminUser.Enabled = true;
             txt_Pass.Enabled = true;
+            txt_CheckPass.Enabled = true;
         }
 
         private void btn_LamMoi_Click(object sender, EventArgs e)
@@ -202,6 +208,7 @@ namespace AppQL_BanHang
             txt_Name.Text = null;
             txt_Email.Text = null;
             txt_adminUser.Text = null;
+            txt_CheckPass.Text = null;
             txt_Pass.Text = null;
             btn_Sua.Enabled = true;
             btn_Xoa.Enabled = true;
@@ -229,6 +236,20 @@ namespace AppQL_BanHang
         private void btn_Close_Click(object sender, EventArgs e)
         {
             Close();
+        }
+        ErrorProvider error = new ErrorProvider();
+
+        private void txt_CheckPass_TextChanged(object sender, EventArgs e)
+        {
+            if ( txt_CheckPass.Text != txt_Pass.Text)
+            {
+                error.SetError(this, "Mật khẩu không trùng khớp! Mời nhập lại ");
+                btn_Luu.Enabled = false;
+            }
+            else
+            {
+                btn_Luu.Enabled=true;
+            }
         }
     }
 }
