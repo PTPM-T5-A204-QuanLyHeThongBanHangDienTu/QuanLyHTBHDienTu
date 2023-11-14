@@ -28,5 +28,9 @@ namespace BLL
         {
             return orders.deleteOrderById(id);
         }
+        public DataTable loadListBill(DateTime ngaydau, DateTime ngaycuoi)
+        {
+            return orders.loadListBill(ngaydau,ngaycuoi);
+        }
     }
 }

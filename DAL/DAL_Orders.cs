@@ -32,8 +32,22 @@ namespace DAL
             da.Fill(da_Orders, "tbl_order");
             return da_Orders.Tables["tbl_order"];
         }
-       
-        
+        public DataTable loadListBill(DateTime ngaydau, DateTime ngaycuoi)
+        {
+            MySqlDataAdapter da = new MySqlDataAdapter();
+            DataSet da_Orders = new DataSet();
+            string caulenh = "SELECT * FROM `tbl_order` WHERE date_order BETWEEN '" + ngaydau.ToString("yyyy-MM-dd") + "' AND '" + ngaycuoi.ToString("yyyy-MM-dd") + "'";
+            da = new MySqlDataAdapter(caulenh, conn);
+            da.Fill(da_Orders, "tbl_order");
+            DataColumn[] keys = new DataColumn[1];
+            keys[0] = da_Orders.Tables["tbl_order"].Columns[0];
+            da_Orders.Tables["tbl_order"].PrimaryKey = keys;
+            return da_Orders.Tables["tbl_order"];
+
+        }
+
+
+
         public DataTable searchDayOrder(string search)
         {
             try
