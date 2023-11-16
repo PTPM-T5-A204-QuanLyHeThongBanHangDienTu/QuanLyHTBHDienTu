@@ -9,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO;
+using DAL;
 
 namespace AppQL_BanHang
 {
@@ -49,6 +51,12 @@ namespace AppQL_BanHang
 
         private void btn_inthongke_Click(object sender, EventArgs e)
         {
+
+
+            ExcelExport exp = new ExcelExport();
+            List<tbl_order> bill = orders.LoadListBillList(dp_ngaydau.Value, dp_ngaycuoi.Value);
+            string name = "Report";
+            exp.ExportReport(bill, ref name, true);
         }
     }
 }

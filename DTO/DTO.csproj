@@ -99,6 +99,7 @@
     <Compile Include="tbl_brand.cs" />
     <Compile Include="tbl_category.cs" />
     <Compile Include="tbl_customer.cs" />
+    <Compile Include="tbl_order.cs" />
     <Compile Include="tbl_product.cs" />
     <Compile Include="tbl_TaiKhoan.cs" />
   </ItemGroup>

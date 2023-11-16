@@ -32,5 +32,9 @@ namespace BLL
         {
             return orders.loadListBill(ngaydau,ngaycuoi);
         }
+        public List<tbl_order> LoadListBillList(DateTime ngaydau, DateTime ngaycuoi)
+        {
+            return orders.LoadListBillList(ngaydau, ngaycuoi);
+        }
     }
 }

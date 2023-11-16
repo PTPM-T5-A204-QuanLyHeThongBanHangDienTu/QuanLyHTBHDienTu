@@ -45,8 +45,42 @@ namespace DAL
             return da_Orders.Tables["tbl_order"];
 
         }
+        public List<tbl_order> LoadListBillList(DateTime ngaydau, DateTime ngaycuoi)
+        {
+            List<tbl_order> orders = new List<tbl_order>();
 
+            using (MySqlConnection conn = new MySqlConnection("server=localhost; Database =web_mvcphu; Uid=root"))
+            {
+                conn.Open();
 
+                string query = "SELECT * FROM `tbl_order` WHERE date_order BETWEEN '" + ngaydau.ToString("yyyy-MM-dd") + "' AND '" + ngaycuoi.ToString("yyyy-MM-dd") + "'";
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                using (MySqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        tbl_order order = new tbl_order
+                        {
+                            //STT = reader.GetString("STT"),
+                            id = reader.GetInt32("id"),
+                            productId = reader.GetInt32("productId"),
+                            productName = reader.GetString("productName"),
+                            customer_id = reader.GetInt32("customer_id"),
+                            quantity = reader.GetInt32("quantity"),
+                            price = reader.GetString("price"),
+                            image = reader.GetString("image"),
+                            status = reader.GetInt32("status"),
+                            date_order = Convert.ToDateTime(reader["date_order"]),
+                        };
+
+                        orders.Add(order);
+                    }
+                }
+            }
+
+            return orders;
+        }
 
         public DataTable searchDayOrder(string search)
         {
