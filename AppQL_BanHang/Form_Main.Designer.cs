@@ -40,10 +40,10 @@
             this.btn_xoa = new Guna.UI2.WinForms.Guna2Button();
             this.btn_them = new Guna.UI2.WinForms.Guna2Button();
             this.btn_luu = new Guna.UI2.WinForms.Guna2Button();
-            this.txt_timkiem = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dtg_Brands = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btn_Close = new Guna.UI2.WinForms.Guna2Button();
+            this.txt_timkiem = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Brands)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,7 +57,7 @@
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(737, 183);
             this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(138, 53);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(138, 21);
             this.guna2HtmlLabel1.TabIndex = 69;
             this.guna2HtmlLabel1.Text = "Tên Thương Hiệu";
             // 
@@ -71,7 +71,7 @@
             this.guna2HtmlLabel9.Location = new System.Drawing.Point(382, 175);
             this.guna2HtmlLabel9.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(138, 53);
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(138, 21);
             this.guna2HtmlLabel9.TabIndex = 68;
             this.guna2HtmlLabel9.Text = "Mã Thương Hiệu";
             // 
@@ -207,30 +207,6 @@
             this.btn_luu.Text = "Lưu";
             this.btn_luu.Click += new System.EventHandler(this.btn_luu_Click);
             // 
-            // txt_timkiem
-            // 
-            this.txt_timkiem.BorderColor = System.Drawing.Color.Black;
-            this.txt_timkiem.BorderRadius = 6;
-            this.txt_timkiem.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_timkiem.DefaultText = "";
-            this.txt_timkiem.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_timkiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_timkiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_timkiem.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_timkiem.FillColor = System.Drawing.Color.Snow;
-            this.txt_timkiem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_timkiem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_timkiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_timkiem.Location = new System.Drawing.Point(1105, 209);
-            this.txt_timkiem.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_timkiem.Name = "txt_timkiem";
-            this.txt_timkiem.PasswordChar = '\0';
-            this.txt_timkiem.PlaceholderText = "Nhập tên thương hiệu";
-            this.txt_timkiem.SelectedText = "";
-            this.txt_timkiem.Size = new System.Drawing.Size(194, 29);
-            this.txt_timkiem.TabIndex = 81;
-            this.txt_timkiem.TextChanged += new System.EventHandler(this.txt_timkiem_TextChanged);
-            // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.AutoSize = false;
@@ -241,7 +217,7 @@
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(646, 11);
             this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(372, 83);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(372, 34);
             this.guna2HtmlLabel2.TabIndex = 82;
             this.guna2HtmlLabel2.Text = "QUẢN LÝ THƯƠNG HIỆU";
             // 
@@ -272,7 +248,7 @@
             this.dtg_Brands.Location = new System.Drawing.Point(382, 272);
             this.dtg_Brands.Name = "dtg_Brands";
             this.dtg_Brands.RowHeadersVisible = false;
-            this.dtg_Brands.RowHeadersWidth = 100;
+            this.dtg_Brands.RowHeadersWidth = 50;
             this.dtg_Brands.Size = new System.Drawing.Size(636, 256);
             this.dtg_Brands.TabIndex = 83;
             this.dtg_Brands.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -315,6 +291,30 @@
             this.btn_Close.Text = "Đóng";
             this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
             // 
+            // txt_timkiem
+            // 
+            this.txt_timkiem.BorderColor = System.Drawing.Color.Aqua;
+            this.txt_timkiem.BorderRadius = 6;
+            this.txt_timkiem.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_timkiem.DefaultText = "";
+            this.txt_timkiem.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_timkiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_timkiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_timkiem.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_timkiem.FillColor = System.Drawing.Color.Snow;
+            this.txt_timkiem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_timkiem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_timkiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_timkiem.Location = new System.Drawing.Point(1093, 209);
+            this.txt_timkiem.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_timkiem.Name = "txt_timkiem";
+            this.txt_timkiem.PasswordChar = '\0';
+            this.txt_timkiem.PlaceholderText = "Nhập tên thương hiệu cần tìm";
+            this.txt_timkiem.SelectedText = "";
+            this.txt_timkiem.Size = new System.Drawing.Size(206, 36);
+            this.txt_timkiem.TabIndex = 81;
+            this.txt_timkiem.TextChanged += new System.EventHandler(this.txt_timkiem_TextChanged);
+            // 
             // Form_Main
             // 
             this.BackColor = System.Drawing.Color.GhostWhite;
@@ -352,10 +352,10 @@
         private Guna.UI2.WinForms.Guna2Button btn_xoa;
         private Guna.UI2.WinForms.Guna2Button btn_them;
         private Guna.UI2.WinForms.Guna2Button btn_luu;
-        private Guna.UI2.WinForms.Guna2TextBox txt_timkiem;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2DataGridView dtg_Brands;
         private Guna.UI2.WinForms.Guna2Button btn_Close;
+        private Guna.UI2.WinForms.Guna2TextBox txt_timkiem;
     }
 }
 

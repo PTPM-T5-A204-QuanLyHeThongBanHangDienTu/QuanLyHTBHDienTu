@@ -35,16 +35,12 @@
             this.txt_hinhanh = new Guna.UI2.WinForms.Guna2TextBox();
             this.pcb_SanPham = new Guna.UI2.WinForms.Guna2PictureBox();
             this.cbo_loaiSP = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.txt_timkiem = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_chonanh = new Guna.UI2.WinForms.Guna2Button();
             this.btn_xoa = new Guna.UI2.WinForms.Guna2Button();
             this.btn_lammoi = new Guna.UI2.WinForms.Guna2Button();
             this.btn_sua = new Guna.UI2.WinForms.Guna2Button();
             this.btn_them = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txt_dongiaban = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_sl = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_tensp = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_masp = new Guna.UI2.WinForms.Guna2TextBox();
             this.dtgv_DSSP = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -59,6 +55,10 @@
             this.txt_mota = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_Close = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txt_sl = new ThuVien_GiaoDien.txt_Upper();
+            this.txt_tensp = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_dongiaban = new ThuVien_GiaoDien.txt_Upper();
+            this.txt_timkiem = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_SanPham)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_DSSP)).BeginInit();
             this.SuspendLayout();
@@ -73,7 +73,7 @@
             this.btn_luu.FillColor = System.Drawing.Color.SlateBlue;
             this.btn_luu.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_luu.ForeColor = System.Drawing.Color.Black;
-            this.btn_luu.Location = new System.Drawing.Point(1220, 227);
+            this.btn_luu.Location = new System.Drawing.Point(1219, 243);
             this.btn_luu.Margin = new System.Windows.Forms.Padding(2);
             this.btn_luu.Name = "btn_luu";
             this.btn_luu.Size = new System.Drawing.Size(120, 37);
@@ -95,13 +95,13 @@
             this.txt_hinhanh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_hinhanh.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_hinhanh.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_hinhanh.Location = new System.Drawing.Point(722, 347);
+            this.txt_hinhanh.Location = new System.Drawing.Point(703, 347);
             this.txt_hinhanh.Margin = new System.Windows.Forms.Padding(2);
             this.txt_hinhanh.Name = "txt_hinhanh";
             this.txt_hinhanh.PasswordChar = '\0';
             this.txt_hinhanh.PlaceholderText = "";
             this.txt_hinhanh.SelectedText = "";
-            this.txt_hinhanh.Size = new System.Drawing.Size(165, 32);
+            this.txt_hinhanh.Size = new System.Drawing.Size(184, 32);
             this.txt_hinhanh.TabIndex = 49;
             // 
             // pcb_SanPham
@@ -111,7 +111,7 @@
             this.pcb_SanPham.Location = new System.Drawing.Point(952, 194);
             this.pcb_SanPham.Margin = new System.Windows.Forms.Padding(2);
             this.pcb_SanPham.Name = "pcb_SanPham";
-            this.pcb_SanPham.Size = new System.Drawing.Size(194, 279);
+            this.pcb_SanPham.Size = new System.Drawing.Size(194, 306);
             this.pcb_SanPham.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcb_SanPham.TabIndex = 48;
             this.pcb_SanPham.TabStop = false;
@@ -135,30 +135,6 @@
             this.cbo_loaiSP.Size = new System.Drawing.Size(245, 36);
             this.cbo_loaiSP.TabIndex = 47;
             // 
-            // txt_timkiem
-            // 
-            this.txt_timkiem.BorderColor = System.Drawing.Color.Black;
-            this.txt_timkiem.BorderRadius = 6;
-            this.txt_timkiem.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_timkiem.DefaultText = "";
-            this.txt_timkiem.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_timkiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_timkiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_timkiem.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_timkiem.FillColor = System.Drawing.Color.Snow;
-            this.txt_timkiem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_timkiem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_timkiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_timkiem.Location = new System.Drawing.Point(1193, 194);
-            this.txt_timkiem.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_timkiem.Name = "txt_timkiem";
-            this.txt_timkiem.PasswordChar = '\0';
-            this.txt_timkiem.PlaceholderText = "Nhập tên sản phẩm tìm";
-            this.txt_timkiem.SelectedText = "";
-            this.txt_timkiem.Size = new System.Drawing.Size(173, 29);
-            this.txt_timkiem.TabIndex = 46;
-            this.txt_timkiem.TextChanged += new System.EventHandler(this.txt_timkiem_TextChanged);
-            // 
             // btn_chonanh
             // 
             this.btn_chonanh.BorderColor = System.Drawing.Color.LightGray;
@@ -170,7 +146,7 @@
             this.btn_chonanh.FillColor = System.Drawing.Color.SlateBlue;
             this.btn_chonanh.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_chonanh.ForeColor = System.Drawing.Color.Black;
-            this.btn_chonanh.Location = new System.Drawing.Point(1220, 436);
+            this.btn_chonanh.Location = new System.Drawing.Point(1219, 449);
             this.btn_chonanh.Margin = new System.Windows.Forms.Padding(2);
             this.btn_chonanh.Name = "btn_chonanh";
             this.btn_chonanh.Size = new System.Drawing.Size(120, 37);
@@ -188,7 +164,7 @@
             this.btn_xoa.FillColor = System.Drawing.Color.SlateBlue;
             this.btn_xoa.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_xoa.ForeColor = System.Drawing.Color.Black;
-            this.btn_xoa.Location = new System.Drawing.Point(1220, 351);
+            this.btn_xoa.Location = new System.Drawing.Point(1219, 367);
             this.btn_xoa.Margin = new System.Windows.Forms.Padding(2);
             this.btn_xoa.Name = "btn_xoa";
             this.btn_xoa.Size = new System.Drawing.Size(120, 37);
@@ -206,7 +182,7 @@
             this.btn_lammoi.FillColor = System.Drawing.Color.SlateBlue;
             this.btn_lammoi.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_lammoi.ForeColor = System.Drawing.Color.Black;
-            this.btn_lammoi.Location = new System.Drawing.Point(1220, 395);
+            this.btn_lammoi.Location = new System.Drawing.Point(1219, 408);
             this.btn_lammoi.Margin = new System.Windows.Forms.Padding(2);
             this.btn_lammoi.Name = "btn_lammoi";
             this.btn_lammoi.Size = new System.Drawing.Size(120, 37);
@@ -224,7 +200,7 @@
             this.btn_sua.FillColor = System.Drawing.Color.SlateBlue;
             this.btn_sua.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_sua.ForeColor = System.Drawing.Color.Black;
-            this.btn_sua.Location = new System.Drawing.Point(1220, 310);
+            this.btn_sua.Location = new System.Drawing.Point(1219, 326);
             this.btn_sua.Margin = new System.Windows.Forms.Padding(2);
             this.btn_sua.Name = "btn_sua";
             this.btn_sua.Size = new System.Drawing.Size(120, 37);
@@ -242,7 +218,7 @@
             this.btn_them.FillColor = System.Drawing.Color.SlateBlue;
             this.btn_them.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_them.ForeColor = System.Drawing.Color.Black;
-            this.btn_them.Location = new System.Drawing.Point(1220, 269);
+            this.btn_them.Location = new System.Drawing.Point(1219, 285);
             this.btn_them.Margin = new System.Windows.Forms.Padding(2);
             this.btn_them.Name = "btn_them";
             this.btn_them.Size = new System.Drawing.Size(120, 37);
@@ -263,75 +239,6 @@
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(138, 21);
             this.guna2HtmlLabel8.TabIndex = 39;
             this.guna2HtmlLabel8.Text = "Mô Tả";
-            // 
-            // txt_dongiaban
-            // 
-            this.txt_dongiaban.BorderColor = System.Drawing.Color.Black;
-            this.txt_dongiaban.BorderRadius = 6;
-            this.txt_dongiaban.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_dongiaban.DefaultText = "";
-            this.txt_dongiaban.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_dongiaban.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_dongiaban.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_dongiaban.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_dongiaban.FillColor = System.Drawing.Color.Snow;
-            this.txt_dongiaban.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_dongiaban.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_dongiaban.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_dongiaban.Location = new System.Drawing.Point(499, 347);
-            this.txt_dongiaban.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_dongiaban.Name = "txt_dongiaban";
-            this.txt_dongiaban.PasswordChar = '\0';
-            this.txt_dongiaban.PlaceholderText = "";
-            this.txt_dongiaban.SelectedText = "";
-            this.txt_dongiaban.Size = new System.Drawing.Size(175, 32);
-            this.txt_dongiaban.TabIndex = 37;
-            // 
-            // txt_sl
-            // 
-            this.txt_sl.BorderColor = System.Drawing.Color.Black;
-            this.txt_sl.BorderRadius = 6;
-            this.txt_sl.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_sl.DefaultText = "";
-            this.txt_sl.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_sl.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_sl.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_sl.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_sl.FillColor = System.Drawing.Color.Snow;
-            this.txt_sl.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_sl.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_sl.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_sl.Location = new System.Drawing.Point(298, 347);
-            this.txt_sl.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_sl.Name = "txt_sl";
-            this.txt_sl.PasswordChar = '\0';
-            this.txt_sl.PlaceholderText = "";
-            this.txt_sl.SelectedText = "";
-            this.txt_sl.Size = new System.Drawing.Size(155, 32);
-            this.txt_sl.TabIndex = 36;
-            // 
-            // txt_tensp
-            // 
-            this.txt_tensp.BorderColor = System.Drawing.Color.Black;
-            this.txt_tensp.BorderRadius = 6;
-            this.txt_tensp.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_tensp.DefaultText = "";
-            this.txt_tensp.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_tensp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_tensp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_tensp.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_tensp.FillColor = System.Drawing.Color.Snow;
-            this.txt_tensp.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_tensp.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_tensp.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_tensp.Location = new System.Drawing.Point(599, 268);
-            this.txt_tensp.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_tensp.Name = "txt_tensp";
-            this.txt_tensp.PasswordChar = '\0';
-            this.txt_tensp.PlaceholderText = "";
-            this.txt_tensp.SelectedText = "";
-            this.txt_tensp.Size = new System.Drawing.Size(288, 32);
-            this.txt_tensp.TabIndex = 35;
             // 
             // txt_masp
             // 
@@ -361,7 +268,6 @@
             this.dtgv_DSSP.AllowUserToAddRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dtgv_DSSP.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgv_DSSP.BackgroundColor = System.Drawing.Color.SlateGray;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -370,7 +276,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgv_DSSP.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgv_DSSP.ColumnHeadersHeight = 19;
+            this.dtgv_DSSP.ColumnHeadersHeight = 20;
             this.dtgv_DSSP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -381,7 +287,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgv_DSSP.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgv_DSSP.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dtgv_DSSP.Location = new System.Drawing.Point(299, 514);
+            this.dtgv_DSSP.Location = new System.Drawing.Point(298, 504);
             this.dtgv_DSSP.Margin = new System.Windows.Forms.Padding(2);
             this.dtgv_DSSP.Name = "dtgv_DSSP";
             this.dtgv_DSSP.RowHeadersVisible = false;
@@ -394,14 +300,14 @@
             this.dtgv_DSSP.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.dtgv_DSSP.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.dtgv_DSSP.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dtgv_DSSP.ThemeStyle.BackColor = System.Drawing.Color.SlateGray;
+            this.dtgv_DSSP.ThemeStyle.BackColor = System.Drawing.Color.White;
             this.dtgv_DSSP.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dtgv_DSSP.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dtgv_DSSP.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dtgv_DSSP.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtgv_DSSP.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dtgv_DSSP.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dtgv_DSSP.ThemeStyle.HeaderStyle.Height = 19;
+            this.dtgv_DSSP.ThemeStyle.HeaderStyle.Height = 20;
             this.dtgv_DSSP.ThemeStyle.ReadOnly = false;
             this.dtgv_DSSP.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgv_DSSP.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -433,7 +339,7 @@
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(599, 243);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(619, 243);
             this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(124, 21);
@@ -517,7 +423,7 @@
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(667, 164);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(619, 164);
             this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(145, 21);
@@ -537,10 +443,10 @@
             this.cbb_thuonghieu.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbb_thuonghieu.ForeColor = System.Drawing.Color.Black;
             this.cbb_thuonghieu.ItemHeight = 30;
-            this.cbb_thuonghieu.Location = new System.Drawing.Point(599, 193);
+            this.cbb_thuonghieu.Location = new System.Drawing.Point(619, 193);
             this.cbb_thuonghieu.Margin = new System.Windows.Forms.Padding(2);
             this.cbb_thuonghieu.Name = "cbb_thuonghieu";
-            this.cbb_thuonghieu.Size = new System.Drawing.Size(288, 36);
+            this.cbb_thuonghieu.Size = new System.Drawing.Size(268, 36);
             this.cbb_thuonghieu.TabIndex = 52;
             // 
             // txt_mota
@@ -591,12 +497,101 @@
             this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel10.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel10.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(722, 322);
+            this.guna2HtmlLabel10.Location = new System.Drawing.Point(703, 322);
             this.guna2HtmlLabel10.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
             this.guna2HtmlLabel10.Size = new System.Drawing.Size(118, 21);
             this.guna2HtmlLabel10.TabIndex = 58;
             this.guna2HtmlLabel10.Text = "Tên Ảnh";
+            // 
+            // txt_sl
+            // 
+            this.txt_sl.BorderColor = System.Drawing.Color.Black;
+            this.txt_sl.BorderRadius = 6;
+            this.txt_sl.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_sl.DefaultText = "";
+            this.txt_sl.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_sl.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_sl.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_sl.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_sl.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_sl.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_sl.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_sl.Location = new System.Drawing.Point(298, 347);
+            this.txt_sl.Name = "txt_sl";
+            this.txt_sl.PasswordChar = '\0';
+            this.txt_sl.PlaceholderText = "";
+            this.txt_sl.SelectedText = "";
+            this.txt_sl.Size = new System.Drawing.Size(177, 32);
+            this.txt_sl.TabIndex = 105;
+            // 
+            // txt_tensp
+            // 
+            this.txt_tensp.BorderColor = System.Drawing.Color.Black;
+            this.txt_tensp.BorderRadius = 6;
+            this.txt_tensp.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_tensp.DefaultText = "";
+            this.txt_tensp.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_tensp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_tensp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_tensp.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_tensp.FillColor = System.Drawing.Color.Snow;
+            this.txt_tensp.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_tensp.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_tensp.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_tensp.Location = new System.Drawing.Point(619, 268);
+            this.txt_tensp.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_tensp.Name = "txt_tensp";
+            this.txt_tensp.PasswordChar = '\0';
+            this.txt_tensp.PlaceholderText = "";
+            this.txt_tensp.SelectedText = "";
+            this.txt_tensp.Size = new System.Drawing.Size(268, 32);
+            this.txt_tensp.TabIndex = 106;
+            // 
+            // txt_dongiaban
+            // 
+            this.txt_dongiaban.BorderColor = System.Drawing.Color.Black;
+            this.txt_dongiaban.BorderRadius = 6;
+            this.txt_dongiaban.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_dongiaban.DefaultText = "";
+            this.txt_dongiaban.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_dongiaban.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_dongiaban.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_dongiaban.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_dongiaban.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_dongiaban.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_dongiaban.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_dongiaban.Location = new System.Drawing.Point(499, 347);
+            this.txt_dongiaban.Name = "txt_dongiaban";
+            this.txt_dongiaban.PasswordChar = '\0';
+            this.txt_dongiaban.PlaceholderText = "";
+            this.txt_dongiaban.SelectedText = "";
+            this.txt_dongiaban.Size = new System.Drawing.Size(177, 32);
+            this.txt_dongiaban.TabIndex = 107;
+            // 
+            // txt_timkiem
+            // 
+            this.txt_timkiem.BorderColor = System.Drawing.Color.Aqua;
+            this.txt_timkiem.BorderRadius = 6;
+            this.txt_timkiem.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_timkiem.DefaultText = "";
+            this.txt_timkiem.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_timkiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_timkiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_timkiem.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_timkiem.FillColor = System.Drawing.Color.Snow;
+            this.txt_timkiem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_timkiem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_timkiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_timkiem.Location = new System.Drawing.Point(1193, 194);
+            this.txt_timkiem.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_timkiem.Name = "txt_timkiem";
+            this.txt_timkiem.PasswordChar = '\0';
+            this.txt_timkiem.PlaceholderText = "Nhập tên sản phẩm tìm";
+            this.txt_timkiem.SelectedText = "";
+            this.txt_timkiem.Size = new System.Drawing.Size(173, 35);
+            this.txt_timkiem.TabIndex = 46;
+            this.txt_timkiem.TextChanged += new System.EventHandler(this.txt_timkiem_TextChanged);
             // 
             // Form_Product
             // 
@@ -605,6 +600,9 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.ClientSize = new System.Drawing.Size(1498, 921);
+            this.Controls.Add(this.txt_dongiaban);
+            this.Controls.Add(this.txt_tensp);
+            this.Controls.Add(this.txt_sl);
             this.Controls.Add(this.guna2HtmlLabel10);
             this.Controls.Add(this.btn_Close);
             this.Controls.Add(this.txt_mota);
@@ -622,9 +620,6 @@
             this.Controls.Add(this.btn_sua);
             this.Controls.Add(this.btn_them);
             this.Controls.Add(this.guna2HtmlLabel8);
-            this.Controls.Add(this.txt_dongiaban);
-            this.Controls.Add(this.txt_sl);
-            this.Controls.Add(this.txt_tensp);
             this.Controls.Add(this.txt_masp);
             this.Controls.Add(this.dtgv_DSSP);
             this.Controls.Add(this.guna2HtmlLabel7);
@@ -651,16 +646,12 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_hinhanh;
         private Guna.UI2.WinForms.Guna2PictureBox pcb_SanPham;
         private Guna.UI2.WinForms.Guna2ComboBox cbo_loaiSP;
-        private Guna.UI2.WinForms.Guna2TextBox txt_timkiem;
         private Guna.UI2.WinForms.Guna2Button btn_chonanh;
         private Guna.UI2.WinForms.Guna2Button btn_xoa;
         private Guna.UI2.WinForms.Guna2Button btn_lammoi;
         private Guna.UI2.WinForms.Guna2Button btn_sua;
         private Guna.UI2.WinForms.Guna2Button btn_them;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
-        private Guna.UI2.WinForms.Guna2TextBox txt_dongiaban;
-        private Guna.UI2.WinForms.Guna2TextBox txt_sl;
-        private Guna.UI2.WinForms.Guna2TextBox txt_tensp;
         private Guna.UI2.WinForms.Guna2TextBox txt_masp;
         private Guna.UI2.WinForms.Guna2DataGridView dtgv_DSSP;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
@@ -675,5 +666,9 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_mota;
         private Guna.UI2.WinForms.Guna2Button btn_Close;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
+        private ThuVien_GiaoDien.txt_Upper txt_sl;
+        private Guna.UI2.WinForms.Guna2TextBox txt_tensp;
+        private ThuVien_GiaoDien.txt_Upper txt_dongiaban;
+        private Guna.UI2.WinForms.Guna2TextBox txt_timkiem;
     }
 }

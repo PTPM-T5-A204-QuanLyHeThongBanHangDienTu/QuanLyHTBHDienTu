@@ -224,7 +224,7 @@ namespace AppQL_BanHang
             }
             else
             {
-                string timkiem = txt_timkiem.Text.Trim();
+                string timkiem =    txt_timkiem.Text.Trim();
                 MySqlDataAdapter da = new MySqlDataAdapter();
                 da = ad.TimKiemAdmin(timkiem);
                 DataTable dt = new DataTable();

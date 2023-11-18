@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_ResetPass));
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtEmaildangky = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btn_Tim = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl_kq = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtEmaildangky = new ThuVien_GiaoDien.txt_MailTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,29 +51,6 @@
             this.guna2HtmlLabel12.Size = new System.Drawing.Size(48, 21);
             this.guna2HtmlLabel12.TabIndex = 94;
             this.guna2HtmlLabel12.Text = "Email ";
-            // 
-            // txtEmaildangky
-            // 
-            this.txtEmaildangky.BorderColor = System.Drawing.Color.Black;
-            this.txtEmaildangky.BorderRadius = 6;
-            this.txtEmaildangky.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEmaildangky.DefaultText = "";
-            this.txtEmaildangky.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtEmaildangky.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtEmaildangky.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmaildangky.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmaildangky.FillColor = System.Drawing.Color.Snow;
-            this.txtEmaildangky.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmaildangky.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtEmaildangky.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmaildangky.Location = new System.Drawing.Point(106, 172);
-            this.txtEmaildangky.Margin = new System.Windows.Forms.Padding(2);
-            this.txtEmaildangky.Name = "txtEmaildangky";
-            this.txtEmaildangky.PasswordChar = '\0';
-            this.txtEmaildangky.PlaceholderText = "";
-            this.txtEmaildangky.SelectedText = "";
-            this.txtEmaildangky.Size = new System.Drawing.Size(222, 29);
-            this.txtEmaildangky.TabIndex = 93;
             // 
             // guna2HtmlLabel1
             // 
@@ -97,7 +74,7 @@
             this.btn_Tim.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_Tim.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_Tim.FillColor = System.Drawing.Color.SlateBlue;
-            this.btn_Tim.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Tim.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btn_Tim.ForeColor = System.Drawing.Color.Black;
             this.btn_Tim.Location = new System.Drawing.Point(142, 273);
             this.btn_Tim.Margin = new System.Windows.Forms.Padding(2);
@@ -129,18 +106,40 @@
             this.lbl_kq.Name = "lbl_kq";
             this.lbl_kq.Size = new System.Drawing.Size(194, 1);
             this.lbl_kq.TabIndex = 98;
+            this.lbl_kq.Text = null;
+            // 
+            // txtEmaildangky
+            // 
+            this.txtEmaildangky.BorderColor = System.Drawing.Color.Black;
+            this.txtEmaildangky.BorderRadius = 6;
+            this.txtEmaildangky.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEmaildangky.DefaultText = "";
+            this.txtEmaildangky.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtEmaildangky.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtEmaildangky.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmaildangky.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmaildangky.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmaildangky.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEmaildangky.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmaildangky.Location = new System.Drawing.Point(120, 164);
+            this.txtEmaildangky.Name = "txtEmaildangky";
+            this.txtEmaildangky.PasswordChar = '\0';
+            this.txtEmaildangky.PlaceholderText = "";
+            this.txtEmaildangky.SelectedText = "";
+            this.txtEmaildangky.Size = new System.Drawing.Size(198, 29);
+            this.txtEmaildangky.TabIndex = 99;
             // 
             // Form_ResetPass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(405, 361);
+            this.ClientSize = new System.Drawing.Size(399, 361);
+            this.Controls.Add(this.txtEmaildangky);
             this.Controls.Add(this.lbl_kq);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_Tim);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.guna2HtmlLabel12);
-            this.Controls.Add(this.txtEmaildangky);
             this.Name = "Form_ResetPass";
             this.Text = "Form_ResetPass";
             this.Load += new System.EventHandler(this.Form_ResetPass_Load);
@@ -152,10 +151,10 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
-        private Guna.UI2.WinForms.Guna2TextBox txtEmaildangky;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Button btn_Tim;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl_kq;
+        private ThuVien_GiaoDien.txt_MailTextBox txtEmaildangky;
     }
 }

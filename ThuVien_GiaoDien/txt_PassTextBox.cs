@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -8,7 +9,7 @@ using System.Windows.Forms;
 
 namespace ThuVien_GiaoDien
 {
-    public class txt_PassTextBox : TextBox
+    public class txt_PassTextBox : Guna2TextBox
     {
         public txt_PassTextBox() {
             this.TextChanged += Txt_PassTextBox_TextChanged;
@@ -18,7 +19,7 @@ namespace ThuVien_GiaoDien
         {
             if (this.Text.All(a => char.IsLetterOrDigit(a)) || this.Text.Length - 1 < 6)
             {
-                ErrorProvider.SetError(this, "chi chap nhan khi co ki tu dac biet va lon hon 6 ky tu");
+                ErrorProvider.SetError(this, "Chỉ chấp nhận khi có ký tự đặc biệt và lớn hơn 6 ký");
             }
             else
             {

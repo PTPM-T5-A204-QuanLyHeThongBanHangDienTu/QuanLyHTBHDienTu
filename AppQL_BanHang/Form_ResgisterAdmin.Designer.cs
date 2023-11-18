@@ -33,7 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_Close = new Guna.UI2.WinForms.Guna2Button();
-            this.txt_timkiem = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_Luu = new Guna.UI2.WinForms.Guna2Button();
             this.btn_LamMoi = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Sua = new Guna.UI2.WinForms.Guna2Button();
@@ -46,14 +45,15 @@
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dtg_Admin = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btn_them = new Guna.UI2.WinForms.Guna2Button();
-            this.txt_Pass = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_Email = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_adminUser = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_Name = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_Id = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txt_CheckPass = new Guna.UI2.WinForms.Guna2TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.txt_Pass = new ThuVien_GiaoDien.txt_PassTextBox();
+            this.txt_adminUser = new ThuVien_GiaoDien.txt_NameTextBox();
+            this.txt_Name = new ThuVien_GiaoDien.txt_NameTextBox();
+            this.txt_Email = new ThuVien_GiaoDien.txt_MailTextBox();
+            this.txt_timkiem = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Admin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -75,30 +75,6 @@
             this.btn_Close.TabIndex = 94;
             this.btn_Close.Text = "Đóng";
             this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
-            // 
-            // txt_timkiem
-            // 
-            this.txt_timkiem.BorderColor = System.Drawing.Color.Black;
-            this.txt_timkiem.BorderRadius = 6;
-            this.txt_timkiem.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_timkiem.DefaultText = "";
-            this.txt_timkiem.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_timkiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_timkiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_timkiem.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_timkiem.FillColor = System.Drawing.Color.Snow;
-            this.txt_timkiem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_timkiem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_timkiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_timkiem.Location = new System.Drawing.Point(1163, 120);
-            this.txt_timkiem.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_timkiem.Name = "txt_timkiem";
-            this.txt_timkiem.PasswordChar = '\0';
-            this.txt_timkiem.PlaceholderText = "Nhập tên admin";
-            this.txt_timkiem.SelectedText = "";
-            this.txt_timkiem.Size = new System.Drawing.Size(194, 29);
-            this.txt_timkiem.TabIndex = 93;
-            this.txt_timkiem.TextChanged += new System.EventHandler(this.txt_timkiem_TextChanged);
             // 
             // btn_Luu
             // 
@@ -269,7 +245,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtg_Admin.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtg_Admin.ColumnHeadersHeight = 4;
+            this.dtg_Admin.ColumnHeadersHeight = 20;
             this.dtg_Admin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -297,7 +273,7 @@
             this.dtg_Admin.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.dtg_Admin.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dtg_Admin.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dtg_Admin.ThemeStyle.HeaderStyle.Height = 4;
+            this.dtg_Admin.ThemeStyle.HeaderStyle.Height = 20;
             this.dtg_Admin.ThemeStyle.ReadOnly = false;
             this.dtg_Admin.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dtg_Admin.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -325,98 +301,6 @@
             this.btn_them.TabIndex = 77;
             this.btn_them.Text = "Thêm mới";
             this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
-            // 
-            // txt_Pass
-            // 
-            this.txt_Pass.BorderColor = System.Drawing.Color.Black;
-            this.txt_Pass.BorderRadius = 6;
-            this.txt_Pass.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_Pass.DefaultText = "";
-            this.txt_Pass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_Pass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_Pass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Pass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Pass.FillColor = System.Drawing.Color.Snow;
-            this.txt_Pass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Pass.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_Pass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Pass.Location = new System.Drawing.Point(593, 316);
-            this.txt_Pass.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_Pass.Name = "txt_Pass";
-            this.txt_Pass.PasswordChar = '\0';
-            this.txt_Pass.PlaceholderText = "";
-            this.txt_Pass.SelectedText = "";
-            this.txt_Pass.Size = new System.Drawing.Size(256, 29);
-            this.txt_Pass.TabIndex = 76;
-            // 
-            // txt_Email
-            // 
-            this.txt_Email.BorderColor = System.Drawing.Color.Black;
-            this.txt_Email.BorderRadius = 6;
-            this.txt_Email.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_Email.DefaultText = "";
-            this.txt_Email.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_Email.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_Email.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Email.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Email.FillColor = System.Drawing.Color.Snow;
-            this.txt_Email.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Email.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_Email.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Email.Location = new System.Drawing.Point(901, 258);
-            this.txt_Email.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_Email.Name = "txt_Email";
-            this.txt_Email.PasswordChar = '\0';
-            this.txt_Email.PlaceholderText = "";
-            this.txt_Email.SelectedText = "";
-            this.txt_Email.Size = new System.Drawing.Size(256, 29);
-            this.txt_Email.TabIndex = 75;
-            // 
-            // txt_adminUser
-            // 
-            this.txt_adminUser.BorderColor = System.Drawing.Color.Black;
-            this.txt_adminUser.BorderRadius = 6;
-            this.txt_adminUser.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_adminUser.DefaultText = "";
-            this.txt_adminUser.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_adminUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_adminUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_adminUser.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_adminUser.FillColor = System.Drawing.Color.Snow;
-            this.txt_adminUser.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_adminUser.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_adminUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_adminUser.Location = new System.Drawing.Point(593, 258);
-            this.txt_adminUser.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_adminUser.Name = "txt_adminUser";
-            this.txt_adminUser.PasswordChar = '\0';
-            this.txt_adminUser.PlaceholderText = "";
-            this.txt_adminUser.SelectedText = "";
-            this.txt_adminUser.Size = new System.Drawing.Size(256, 29);
-            this.txt_adminUser.TabIndex = 72;
-            // 
-            // txt_Name
-            // 
-            this.txt_Name.BorderColor = System.Drawing.Color.Black;
-            this.txt_Name.BorderRadius = 6;
-            this.txt_Name.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_Name.DefaultText = "";
-            this.txt_Name.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_Name.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_Name.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Name.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Name.FillColor = System.Drawing.Color.Snow;
-            this.txt_Name.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Name.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_Name.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Name.Location = new System.Drawing.Point(901, 200);
-            this.txt_Name.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_Name.Name = "txt_Name";
-            this.txt_Name.PasswordChar = '\0';
-            this.txt_Name.PlaceholderText = "";
-            this.txt_Name.SelectedText = "";
-            this.txt_Name.Size = new System.Drawing.Size(256, 29);
-            this.txt_Name.TabIndex = 69;
             // 
             // txt_Id
             // 
@@ -483,11 +367,123 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // txt_Pass
+            // 
+            this.txt_Pass.BorderColor = System.Drawing.Color.Black;
+            this.txt_Pass.BorderRadius = 6;
+            this.txt_Pass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Pass.DefaultText = "";
+            this.txt_Pass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_Pass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_Pass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Pass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Pass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Pass.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_Pass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Pass.Location = new System.Drawing.Point(593, 316);
+            this.txt_Pass.Name = "txt_Pass";
+            this.txt_Pass.PasswordChar = '\0';
+            this.txt_Pass.PlaceholderText = "";
+            this.txt_Pass.SelectedText = "";
+            this.txt_Pass.Size = new System.Drawing.Size(256, 29);
+            this.txt_Pass.TabIndex = 100;
+            // 
+            // txt_adminUser
+            // 
+            this.txt_adminUser.BorderColor = System.Drawing.Color.Black;
+            this.txt_adminUser.BorderRadius = 6;
+            this.txt_adminUser.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_adminUser.DefaultText = "";
+            this.txt_adminUser.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_adminUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_adminUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_adminUser.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_adminUser.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_adminUser.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_adminUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_adminUser.Location = new System.Drawing.Point(593, 258);
+            this.txt_adminUser.Name = "txt_adminUser";
+            this.txt_adminUser.PasswordChar = '\0';
+            this.txt_adminUser.PlaceholderText = "";
+            this.txt_adminUser.SelectedText = "";
+            this.txt_adminUser.Size = new System.Drawing.Size(256, 29);
+            this.txt_adminUser.TabIndex = 99;
+            // 
+            // txt_Name
+            // 
+            this.txt_Name.BorderColor = System.Drawing.Color.Black;
+            this.txt_Name.BorderRadius = 6;
+            this.txt_Name.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Name.DefaultText = "";
+            this.txt_Name.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_Name.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_Name.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Name.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Name.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Name.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_Name.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Name.Location = new System.Drawing.Point(901, 200);
+            this.txt_Name.Name = "txt_Name";
+            this.txt_Name.PasswordChar = '\0';
+            this.txt_Name.PlaceholderText = "";
+            this.txt_Name.SelectedText = "";
+            this.txt_Name.Size = new System.Drawing.Size(256, 29);
+            this.txt_Name.TabIndex = 98;
+            // 
+            // txt_Email
+            // 
+            this.txt_Email.BorderColor = System.Drawing.Color.Black;
+            this.txt_Email.BorderRadius = 6;
+            this.txt_Email.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Email.DefaultText = "";
+            this.txt_Email.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_Email.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_Email.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Email.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Email.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Email.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_Email.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Email.Location = new System.Drawing.Point(901, 258);
+            this.txt_Email.Name = "txt_Email";
+            this.txt_Email.PasswordChar = '\0';
+            this.txt_Email.PlaceholderText = "";
+            this.txt_Email.SelectedText = "";
+            this.txt_Email.Size = new System.Drawing.Size(256, 29);
+            this.txt_Email.TabIndex = 97;
+            // 
+            // txt_timkiem
+            // 
+            this.txt_timkiem.BorderColor = System.Drawing.Color.Aqua;
+            this.txt_timkiem.BorderRadius = 6;
+            this.txt_timkiem.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_timkiem.DefaultText = "";
+            this.txt_timkiem.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_timkiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_timkiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_timkiem.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_timkiem.FillColor = System.Drawing.Color.Snow;
+            this.txt_timkiem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_timkiem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_timkiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_timkiem.Location = new System.Drawing.Point(1166, 144);
+            this.txt_timkiem.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_timkiem.Name = "txt_timkiem";
+            this.txt_timkiem.PasswordChar = '\0';
+            this.txt_timkiem.PlaceholderText = "Nhập tên admin cần tìm";
+            this.txt_timkiem.SelectedText = "";
+            this.txt_timkiem.Size = new System.Drawing.Size(194, 29);
+            this.txt_timkiem.TabIndex = 93;
+            this.txt_timkiem.TextChanged += new System.EventHandler(this.txt_timkiem_TextChanged);
+            // 
             // Form_ResgisterAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1484, 760);
+            this.Controls.Add(this.txt_Pass);
+            this.Controls.Add(this.txt_adminUser);
+            this.Controls.Add(this.txt_Name);
+            this.Controls.Add(this.txt_Email);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.txt_CheckPass);
             this.Controls.Add(this.btn_Close);
@@ -504,10 +500,6 @@
             this.Controls.Add(this.guna2HtmlLabel9);
             this.Controls.Add(this.dtg_Admin);
             this.Controls.Add(this.btn_them);
-            this.Controls.Add(this.txt_Pass);
-            this.Controls.Add(this.txt_Email);
-            this.Controls.Add(this.txt_adminUser);
-            this.Controls.Add(this.txt_Name);
             this.Controls.Add(this.txt_Id);
             this.Name = "Form_ResgisterAdmin";
             this.Text = "Form_ResgisterAdmin";
@@ -521,7 +513,6 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Button btn_Close;
-        private Guna.UI2.WinForms.Guna2TextBox txt_timkiem;
         private Guna.UI2.WinForms.Guna2Button btn_Luu;
         private Guna.UI2.WinForms.Guna2Button btn_LamMoi;
         private Guna.UI2.WinForms.Guna2Button btn_Sua;
@@ -534,13 +525,14 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2DataGridView dtg_Admin;
         private Guna.UI2.WinForms.Guna2Button btn_them;
-        private Guna.UI2.WinForms.Guna2TextBox txt_Pass;
-        private Guna.UI2.WinForms.Guna2TextBox txt_Email;
-        private Guna.UI2.WinForms.Guna2TextBox txt_adminUser;
-        private Guna.UI2.WinForms.Guna2TextBox txt_Name;
         private Guna.UI2.WinForms.Guna2TextBox txt_Id;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2TextBox txt_CheckPass;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private ThuVien_GiaoDien.txt_MailTextBox txt_Email;
+        private ThuVien_GiaoDien.txt_NameTextBox txt_adminUser;
+        private ThuVien_GiaoDien.txt_NameTextBox txt_Name;
+        private ThuVien_GiaoDien.txt_PassTextBox txt_Pass;
+        private Guna.UI2.WinForms.Guna2TextBox txt_timkiem;
     }
 }

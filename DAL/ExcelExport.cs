@@ -880,7 +880,7 @@ namespace DAL
 
                 case T_DanhMucKhoa:
                     // path += Constants.FILE_KEHOACHTD;
-                    arrByte = File.ReadAllBytes("Report.xls").ToArray();
+                    arrByte = File.ReadAllBytes("Report.xlsx").ToArray();
                     break;
                 #endregion
             }

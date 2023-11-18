@@ -171,7 +171,7 @@ namespace AppQL_BanHang
                 txt_Diachi.Text = tbe_Customer != null ? tbe_Customer.Address : "Không tìm thấy khách hàng";
                 txt_Emails.Text = tbe_Customer != null ? tbe_Customer.Email : "Không tìm thấy khách hàng";
                 txt_TenKhach.Text = tbe_Customer != null ? tbe_Customer.Name : "Không tìm thấy khách hàng";
-                txt_SDT.Text = tbe_Customer != null ? "0" +tbe_Customer.Phone.ToString() : "Không tìm thất khách hàng";
+                txt_SDT.Text = tbe_Customer != null ? tbe_Customer.Phone.ToString() : "Không tìm thất khách hàng";
                 txt_TenSP.Text = guna2DataGridView1.CurrentRow.Cells[2].Value.ToString();
                 txt_Gia.Text = guna2DataGridView1.CurrentRow.Cells[5].Value.ToString();
                 txt_Soluong.Text = guna2DataGridView1.CurrentRow.Cells[4].Value.ToString();
@@ -186,6 +186,12 @@ namespace AppQL_BanHang
         private void btn_Close_Click(object sender, EventArgs e)
         {
             Close();    
+        }
+
+        private void btn_Baocao_Click(object sender, EventArgs e)
+        {
+            Form_Report fr = new Form_Report();
+            fr.ShowDialog();
         }
     }
 }

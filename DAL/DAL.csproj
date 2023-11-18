@@ -61,16 +61,16 @@
       <HintPath>..\AppQL_BanHang\packages\MySql.Data.8.2.0\lib\net48\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.Compression.Base">
-      <HintPath>..\..\..\BTVN\Buoi9\ThuVien\Syncfusion.Compression.Base.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Downloads\Buoi9\ThuVien\Syncfusion.Compression.Base.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.DocIO.Base">
-      <HintPath>..\..\..\BTVN\Buoi9\ThuVien\Syncfusion.DocIO.Base.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Downloads\Buoi9\ThuVien\Syncfusion.DocIO.Base.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.OfficeChart.Base">
-      <HintPath>..\..\..\BTVN\Buoi9\ThuVien\Syncfusion.OfficeChart.Base.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Downloads\Buoi9\ThuVien\Syncfusion.OfficeChart.Base.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.XlsIO.Base">
-      <HintPath>..\..\..\BTVN\Buoi9\ThuVien\Syncfusion.XlsIO.Base.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Downloads\Buoi9\ThuVien\Syncfusion.XlsIO.Base.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">

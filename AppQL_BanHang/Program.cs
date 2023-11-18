@@ -16,7 +16,7 @@ namespace AppQL_BanHang
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_Report());
+            Application.Run(new Form_Control());
         }
     }
 }

@@ -29,7 +29,7 @@ namespace AppQL_BanHang
 
             connection.Open();
 
-            string query = "SELECT * FROM tbl_admin WHERE adminUser = @username AND adminPass = @password";
+            string query = "SELECT * FROM tbl_admin WHERE adminEmail = @username AND adminPass = @password";
             MySqlCommand command = new MySqlCommand(query, connection);
             command.Parameters.AddWithValue("@username", username);
             command.Parameters.AddWithValue("@password", password);

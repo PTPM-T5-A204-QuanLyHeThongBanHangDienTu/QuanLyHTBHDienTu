@@ -8,15 +8,16 @@ using System.Windows.Forms;
 
 namespace ThuVien_GiaoDien
 {
-    public class txt_NameTextBox : Guna2TextBox
+    public class txt_Upper : Guna2TextBox
     {
-        public txt_NameTextBox() {
+        public txt_Upper()
+        {
             this.KeyPress += Txt_NameTextBox_KeyPress;
         }
 
         private void Txt_NameTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-           if (char.IsDigit(e.KeyChar))
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
             {
                 e.Handled = true;
             }

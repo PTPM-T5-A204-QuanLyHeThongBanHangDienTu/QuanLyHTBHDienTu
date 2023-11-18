@@ -326,7 +326,7 @@ namespace AppQL_BanHang
         private void txt_timkiem_TextChanged(object sender, EventArgs e)
         {
             string name = txt_timkiem.Text.Trim();
-            if (name == "")
+            if (name == "") 
             {
                 Form_Product_Load(sender, e);
             }

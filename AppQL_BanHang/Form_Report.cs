@@ -58,5 +58,10 @@ namespace AppQL_BanHang
             string name = "Report";
             exp.ExportReport(bill, ref name, true);
         }
+
+        private void btn_Close_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -26,6 +26,7 @@ namespace AppQL_BanHang
         {
             DataTable dt = brand.load();
             dtg_Brands.DataSource = dt;
+            
             //databingding(dt);
         }
         public void databingding(DataTable dtd)

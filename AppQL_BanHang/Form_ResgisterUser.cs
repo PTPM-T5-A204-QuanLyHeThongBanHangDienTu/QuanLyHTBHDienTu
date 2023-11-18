@@ -290,5 +290,6 @@ namespace AppQL_BanHang
                 btn_Luu.Enabled = true;
             }
         }
+
     }
 }

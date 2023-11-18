@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Guna.UI2.WinForms;
 
 namespace ThuVien_GiaoDien
 {
-    public class txt_MailTextBox : TextBox
+    public class txt_MailTextBox : Guna2TextBox
     {
         public txt_MailTextBox()
         {
@@ -19,11 +20,11 @@ namespace ThuVien_GiaoDien
         {
             if (!this.Text.Contains("@"))
             {
-                ErrorProvider.SetError(this, "Thieu Ky Tu @");
+                ErrorProvider.SetError(this, "Thiếu ký tự @");
             }
             else if ( !this.Text.Contains(".Com"))
             {
-                ErrorProvider.SetError(this, "Thieu .Com");
+                ErrorProvider.SetError(this, "Thiếu .Com");
             }
             else
             {
