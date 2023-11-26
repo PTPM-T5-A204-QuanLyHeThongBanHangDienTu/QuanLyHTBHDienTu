@@ -23,21 +23,29 @@
             <p style ="color:red">II.Giới Thiêu Đề Tài.</p>
             <div class="Team-One">
                 <ul>
-                    <h1>Nhóm chúng em chọn đề tài: Hệ Thống Quản Lý Mua-Bán Sản Phẩm Công Nghệ</h2>
-                    <h3 style="margin-left: 250px;font-size: 30px;color:turquoise">Một số chức năng chính.</h3>
+                    <h1>Nhóm chúng em chọn đề tài: Hệ Thống Quản Lý Mua-Bán Sản Phẩm Công Nghệ</h1>
+                    <h3 style="margin-left: 250px;font-size: 30px;color:turquoise">Một số chức năng chính của trang web</h3>
                     <li><b>1. Trang chủ</b></li>
                     <li><b>2. Trang liệt kê các sản phẩm mua hàng</b></li>
-                    <li><b>3. Trang form đăng kí thành viên</b></li>
-                    <li><b>4. Trang giới thiệu thành viên trong nhóm và lý do chọn đề tài</b></li>
+                    <li><b>3. Trang đăng kí thành viên</b></li>
+                    <li><b>4. Trang đăng nhập tài khoản</b></li>
                     <li><b>5. Trang hiển thị chi tiết 1 sản phẩm</b></li>
-                    <li><b>6. Trang hiển thị giỏ hàng ( giả lập )</b></li>
+                    <li><b>6. Trang hiển thị giỏ hàng </b></li>
+                    <h3 style="margin-left: 250px;font-size: 30px;color:turquoise">Một số chức năng chính của ứng dụng quản lý</h3>
+                    <li><b>1. Form đăng nhập tài khoản</b></li>
+                    <li><b>2. Form đăng ký tài khoản</b></li>
+                    <li><b>3. Form quản lý Categorys</b></li>
+                    <li><b>4. Form quản lý Brands</b></li>
+                    <li><b>5. Form quản lý Sản phẩm</b></li>
+                    <li><b>6. Form quản lý hóa đơn</b></li>
+                    <li><b>7. Form quản lý tài khoản người dùng</b></li>
                 </ul>
             </div>
             <div class="Detai">
                 <p>III.Lý do chọn để tài.</p>
                 <div class="Lydo">
                     <ul>
-                        <li> Giày Sneaker nói riêng và tất cả mặc hàng giày nói chung đã và đang là món phụ kiện không thể thiếu đối với mọi người khi đi ra ngoài.Nắm bắt được nhu cầu đó nhóm chúng em đã quyết định chọn đề tài "Thiết kế trang web bán giày" để mọi người dễễ dàng tiếp xúc với giày hơn cũng như dể dàng tìm kiếm được mẫu giày phù hợp với sở thích của mỗi khách hàng.</li>
+                        <li> Xã hội ngày càng phát triển,công nghệ hiện đại được ứng dụng cuộc sống con người mỗi lúc được cải thiện,để giúp nâng cao đời sống,nhu cầu.Con người đã phát minh và phát triển các phần mềm,Hệ thống quản lý làm việc mang lại hiểu quả,nâng suất cao hơn. Nhằm giúp cho việc quản lý, mua hàng, kiểm tra, kiểm soát dễ dàng và thuận tiện trong cửa hàng nhóm em đã quyết định xây dựng Hệ thống quản lý online bán hàng công nghệ để giải quyết vấn đề trong công tác quản lý, mua hàng trên Hệ thống quản lý cũng như nhiều loại hình khác. Với hệ thống Hệ thống quản lý online bán hàng công nghệ  hy vọng sẽ giúp ích được nhiều cho công việc quản lý khách sử dụng dịch vụ, mua hàng trên Hệ thống quản lý một cách nhanh chóng, với những công cụ xử lý chuyên nghiệp sẽ giúp cho việc thao tác nhanh chóng, tiện lợi. Màn hình với giao diện đơn giản tạo sự thoải mái cho người sử dụng. Với việc áp dụng Hệ thống quản lý online bán hàng công nghệ sẽ giảm bớt thời gian và có thể mua sắm tại nhà một cách nhanh chóng và hiệu quả hơn.</li>
                     </ul>
                 </div>          
             </div>
