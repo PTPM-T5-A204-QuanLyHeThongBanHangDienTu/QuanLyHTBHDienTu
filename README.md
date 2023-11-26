@@ -21,7 +21,7 @@
             </ul>
         </div>
         <div class="Team">
-            <p>II.Giới Thiêu Đề Tài.</p>
+            <p style ="color:red">II.Giới Thiêu Đề Tài.</p>
             <div class="Team-One">
                 <ul>
                     <h1>Nhóm chúng em chọn đề tài: Hệ Thống Quản Lý Mua-Bán Sản Phẩm Công Nghệ</h2>
@@ -43,7 +43,6 @@
                 </div>          
             </div>
         </div>
-        <a href="index.html" style="text-decoration: none;color:gray;font-size: 20px;"><i class="fa fa-arrow-left" aria-hidden="true"></i>Quay lại</a>
     </div>
     
 </body>
