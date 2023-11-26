@@ -12,7 +12,6 @@
         <h2>Giới Thiệu</h2>
         <h2>Môn Học: Thiết Kế Phần Mềm Ứng Dụng Thông Minh</h2>
         <div class="Website-One">
-            
             <p>I.Giới Thiệu Nhóm 1.</p>
             <ul>
                 <li><b>GVHD: Ths. Bùi Công Danh</b></li>
@@ -25,7 +24,7 @@
             <p>II.Giới Thiêu Đề Tài.</p>
             <div class="Team-One">
                 <ul>
-                    <h1>Nhóm 1 chúng em chọn đề tài: Thiết kế Website bán giày.</h2>
+                    <h1>Nhóm chúng em chọn đề tài: Hệ Thống Quản Lý Mua-Bán Sản Phẩm Công Nghệ</h2>
                     <h3 style="margin-left: 250px;font-size: 30px;color:turquoise">Một số chức năng chính.</h3>
                     <li><b>1. Trang chủ</b></li>
                     <li><b>2. Trang liệt kê các sản phẩm mua hàng</b></li>
