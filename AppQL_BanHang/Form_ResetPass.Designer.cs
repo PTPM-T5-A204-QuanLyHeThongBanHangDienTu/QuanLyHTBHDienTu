@@ -45,10 +45,10 @@
             this.guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel12.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel12.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel12.Location = new System.Drawing.Point(49, 172);
-            this.guna2HtmlLabel12.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2HtmlLabel12.Location = new System.Drawing.Point(65, 212);
+            this.guna2HtmlLabel12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
-            this.guna2HtmlLabel12.Size = new System.Drawing.Size(48, 21);
+            this.guna2HtmlLabel12.Size = new System.Drawing.Size(64, 27);
             this.guna2HtmlLabel12.TabIndex = 94;
             this.guna2HtmlLabel12.Text = "Email ";
             // 
@@ -59,10 +59,10 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(49, 228);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(65, 281);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(79, 21);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(105, 27);
             this.guna2HtmlLabel1.TabIndex = 95;
             this.guna2HtmlLabel1.Text = "Mật khẩu: ";
             // 
@@ -76,10 +76,10 @@
             this.btn_Tim.FillColor = System.Drawing.Color.SlateBlue;
             this.btn_Tim.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btn_Tim.ForeColor = System.Drawing.Color.Black;
-            this.btn_Tim.Location = new System.Drawing.Point(142, 273);
-            this.btn_Tim.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Tim.Location = new System.Drawing.Point(189, 336);
+            this.btn_Tim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Tim.Name = "btn_Tim";
-            this.btn_Tim.Size = new System.Drawing.Size(135, 37);
+            this.btn_Tim.Size = new System.Drawing.Size(180, 46);
             this.btn_Tim.TabIndex = 96;
             this.btn_Tim.Text = "Reset";
             this.btn_Tim.Click += new System.EventHandler(this.btn_Tim_Click);
@@ -87,9 +87,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(142, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(189, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(135, 131);
+            this.pictureBox1.Size = new System.Drawing.Size(180, 161);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 97;
             this.pictureBox1.TabStop = false;
@@ -101,10 +102,10 @@
             this.lbl_kq.BackColor = System.Drawing.Color.Transparent;
             this.lbl_kq.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_kq.ForeColor = System.Drawing.Color.Black;
-            this.lbl_kq.Location = new System.Drawing.Point(155, 228);
-            this.lbl_kq.Margin = new System.Windows.Forms.Padding(2);
+            this.lbl_kq.Location = new System.Drawing.Point(207, 281);
+            this.lbl_kq.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lbl_kq.Name = "lbl_kq";
-            this.lbl_kq.Size = new System.Drawing.Size(194, 1);
+            this.lbl_kq.Size = new System.Drawing.Size(259, 1);
             this.lbl_kq.TabIndex = 98;
             this.lbl_kq.Text = null;
             // 
@@ -121,25 +122,28 @@
             this.txtEmaildangky.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmaildangky.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtEmaildangky.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmaildangky.Location = new System.Drawing.Point(120, 164);
+            this.txtEmaildangky.Location = new System.Drawing.Point(160, 202);
+            this.txtEmaildangky.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtEmaildangky.Name = "txtEmaildangky";
             this.txtEmaildangky.PasswordChar = '\0';
             this.txtEmaildangky.PlaceholderText = "";
             this.txtEmaildangky.SelectedText = "";
-            this.txtEmaildangky.Size = new System.Drawing.Size(198, 29);
+            this.txtEmaildangky.Size = new System.Drawing.Size(264, 36);
             this.txtEmaildangky.TabIndex = 99;
             // 
             // Form_ResetPass
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(399, 361);
+            this.BackColor = System.Drawing.Color.GhostWhite;
+            this.ClientSize = new System.Drawing.Size(532, 444);
             this.Controls.Add(this.txtEmaildangky);
             this.Controls.Add(this.lbl_kq);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_Tim);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.guna2HtmlLabel12);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form_ResetPass";
             this.Text = "Form_ResetPass";
             this.Load += new System.EventHandler(this.Form_ResetPass_Load);
