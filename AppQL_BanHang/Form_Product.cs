@@ -38,8 +38,6 @@ namespace AppQL_BanHang
             dtgv_DSSP.Columns[5].Visible = false;
             dtgv_DSSP.Columns[9].Visible = false;
 
-
-
         }
         public void LoadStart()
         {

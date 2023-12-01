@@ -54,10 +54,10 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(705, 226);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(842, 164);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(170, 21);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(301, 21);
             this.guna2HtmlLabel1.TabIndex = 79;
             this.guna2HtmlLabel1.Text = "Tên Loại";
             // 
@@ -68,10 +68,10 @@
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel9.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel9.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(381, 226);
-            this.guna2HtmlLabel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(335, 164);
+            this.guna2HtmlLabel9.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(138, 21);
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(354, 21);
             this.guna2HtmlLabel9.TabIndex = 78;
             this.guna2HtmlLabel9.Text = " Mã Loại";
             // 
@@ -87,13 +87,13 @@
             this.txt_CatName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_CatName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_CatName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_CatName.Location = new System.Drawing.Point(705, 256);
+            this.txt_CatName.Location = new System.Drawing.Point(842, 194);
             this.txt_CatName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_CatName.Name = "txt_CatName";
             this.txt_CatName.PasswordChar = '\0';
             this.txt_CatName.PlaceholderText = "";
             this.txt_CatName.SelectedText = "";
-            this.txt_CatName.Size = new System.Drawing.Size(262, 36);
+            this.txt_CatName.Size = new System.Drawing.Size(422, 36);
             this.txt_CatName.TabIndex = 77;
             // 
             // txt_CatId
@@ -108,13 +108,13 @@
             this.txt_CatId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_CatId.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_CatId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_CatId.Location = new System.Drawing.Point(381, 256);
+            this.txt_CatId.Location = new System.Drawing.Point(335, 194);
             this.txt_CatId.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_CatId.Name = "txt_CatId";
             this.txt_CatId.PasswordChar = '\0';
             this.txt_CatId.PlaceholderText = "";
             this.txt_CatId.SelectedText = "";
-            this.txt_CatId.Size = new System.Drawing.Size(258, 36);
+            this.txt_CatId.Size = new System.Drawing.Size(428, 36);
             this.txt_CatId.TabIndex = 76;
             // 
             // btn_LamMoi
@@ -127,8 +127,8 @@
             this.btn_LamMoi.FillColor = System.Drawing.Color.SlateBlue;
             this.btn_LamMoi.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_LamMoi.ForeColor = System.Drawing.Color.Black;
-            this.btn_LamMoi.Location = new System.Drawing.Point(1041, 527);
-            this.btn_LamMoi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_LamMoi.Location = new System.Drawing.Point(1362, 465);
+            this.btn_LamMoi.Margin = new System.Windows.Forms.Padding(2);
             this.btn_LamMoi.Name = "btn_LamMoi";
             this.btn_LamMoi.Size = new System.Drawing.Size(135, 37);
             this.btn_LamMoi.TabIndex = 75;
@@ -145,8 +145,8 @@
             this.btn_sua.FillColor = System.Drawing.Color.SlateBlue;
             this.btn_sua.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_sua.ForeColor = System.Drawing.Color.Black;
-            this.btn_sua.Location = new System.Drawing.Point(1041, 472);
-            this.btn_sua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_sua.Location = new System.Drawing.Point(1362, 410);
+            this.btn_sua.Margin = new System.Windows.Forms.Padding(2);
             this.btn_sua.Name = "btn_sua";
             this.btn_sua.Size = new System.Drawing.Size(135, 37);
             this.btn_sua.TabIndex = 74;
@@ -163,8 +163,8 @@
             this.btn_xoa.FillColor = System.Drawing.Color.SlateBlue;
             this.btn_xoa.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_xoa.ForeColor = System.Drawing.Color.Black;
-            this.btn_xoa.Location = new System.Drawing.Point(1041, 418);
-            this.btn_xoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_xoa.Location = new System.Drawing.Point(1362, 356);
+            this.btn_xoa.Margin = new System.Windows.Forms.Padding(2);
             this.btn_xoa.Name = "btn_xoa";
             this.btn_xoa.Size = new System.Drawing.Size(135, 37);
             this.btn_xoa.TabIndex = 73;
@@ -181,8 +181,8 @@
             this.btn_them.FillColor = System.Drawing.Color.SlateBlue;
             this.btn_them.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_them.ForeColor = System.Drawing.Color.Black;
-            this.btn_them.Location = new System.Drawing.Point(1041, 365);
-            this.btn_them.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_them.Location = new System.Drawing.Point(1362, 303);
+            this.btn_them.Margin = new System.Windows.Forms.Padding(2);
             this.btn_them.Name = "btn_them";
             this.btn_them.Size = new System.Drawing.Size(135, 37);
             this.btn_them.TabIndex = 72;
@@ -199,8 +199,8 @@
             this.btn_luu.FillColor = System.Drawing.Color.SlateBlue;
             this.btn_luu.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_luu.ForeColor = System.Drawing.Color.Black;
-            this.btn_luu.Location = new System.Drawing.Point(1041, 310);
-            this.btn_luu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_luu.Location = new System.Drawing.Point(1362, 248);
+            this.btn_luu.Margin = new System.Windows.Forms.Padding(2);
             this.btn_luu.Name = "btn_luu";
             this.btn_luu.Size = new System.Drawing.Size(135, 37);
             this.btn_luu.TabIndex = 71;
@@ -214,8 +214,8 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(625, 11);
-            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(724, 11);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(371, 34);
             this.guna2HtmlLabel2.TabIndex = 81;
@@ -245,11 +245,11 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtg_Category.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtg_Category.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtg_Category.Location = new System.Drawing.Point(381, 310);
+            this.dtg_Category.Location = new System.Drawing.Point(335, 248);
             this.dtg_Category.Name = "dtg_Category";
             this.dtg_Category.RowHeadersVisible = false;
             this.dtg_Category.RowHeadersWidth = 50;
-            this.dtg_Category.Size = new System.Drawing.Size(615, 320);
+            this.dtg_Category.Size = new System.Drawing.Size(929, 458);
             this.dtg_Category.TabIndex = 82;
             this.dtg_Category.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dtg_Category.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -272,6 +272,7 @@
             this.dtg_Category.ThemeStyle.RowsStyle.Height = 22;
             this.dtg_Category.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtg_Category.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtg_Category.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtg_Category_CellClick);
             // 
             // btn_Close
             // 
@@ -284,7 +285,7 @@
             this.btn_Close.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_Close.ForeColor = System.Drawing.Color.Black;
             this.btn_Close.Location = new System.Drawing.Point(11, 11);
-            this.btn_Close.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Close.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Close.Name = "btn_Close";
             this.btn_Close.Size = new System.Drawing.Size(56, 19);
             this.btn_Close.TabIndex = 83;
@@ -305,7 +306,7 @@
             this.txt_timkiem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_timkiem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_timkiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_timkiem.Location = new System.Drawing.Point(1001, 256);
+            this.txt_timkiem.Location = new System.Drawing.Point(1322, 194);
             this.txt_timkiem.Margin = new System.Windows.Forms.Padding(2);
             this.txt_timkiem.Name = "txt_timkiem";
             this.txt_timkiem.PasswordChar = '\0';
@@ -320,7 +321,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
-            this.ClientSize = new System.Drawing.Size(1443, 721);
+            this.ClientSize = new System.Drawing.Size(1841, 895);
             this.Controls.Add(this.btn_Close);
             this.Controls.Add(this.dtg_Category);
             this.Controls.Add(this.guna2HtmlLabel2);

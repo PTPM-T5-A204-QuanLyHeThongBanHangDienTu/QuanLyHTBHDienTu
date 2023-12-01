@@ -102,6 +102,7 @@
     <Compile Include="tbl_order.cs" />
     <Compile Include="tbl_product.cs" />
     <Compile Include="tbl_TaiKhoan.cs" />
+    <Compile Include="tbl_warehouse.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

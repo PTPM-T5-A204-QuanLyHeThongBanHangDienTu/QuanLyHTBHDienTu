@@ -92,5 +92,17 @@ namespace AppQL_BanHang
                 dn.ShowDialog();
             }
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            Form_AI fr = new Form_AI();
+            OpenChildForm(fr);
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            Form_Warehouse fr = new Form_Warehouse();
+            OpenChildForm(fr);
+        }
     }
 }

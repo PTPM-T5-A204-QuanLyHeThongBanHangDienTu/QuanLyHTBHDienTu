@@ -22,9 +22,10 @@ namespace ThuVien_GiaoDien
             {
                 ErrorProvider.SetError(this, "Thiếu ký tự @");
             }
-            else if ( !this.Text.Contains(".Com"))
+            else if ( !this.Text.Contains(".com"))
             {
-                ErrorProvider.SetError(this, "Thiếu .Com");
+
+                ErrorProvider.SetError(this, "Thiếu .com");
             }
             else
             {
